@@ -1,0 +1,560 @@
+/* Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;font-family: arial;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+nav ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+input, select{vertical-align:middle; border-radius: 0;}
+
+table,tbody, tfoot, thead, tr, th, td, textarea{outline:0;background:transparent; border-radius: 0 !important;}
+
+label[for="P2Boletins"], .smText{font-size: 10px !important;}
+
+/* Global */
+*, *:after, *:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.row:before, .row:after {content:"";display:table;clear:both;}
+.radius{border-radius: 4px; overflow: hidden;}
+.rounded{border-radius: 10px;overflow: hidden;}
+
+#idCheckoutFC .EstChkNomeCampo, #idCheckoutFC .InputText, #idCheckoutFC .smText, #idCheckoutFC .smSelect, #idCheckoutFC .EstTabPagtoTit{font-size: 0.8em;}
+/* Alignment */
+.text-center{text-align: center !important;}
+.text-left{text-align: left !important;}
+.text-right{text-align: right !important;}
+
+/* Panels */
+[class*='panel'] h1, [class*='panel'] h2, [class*='panel'] h3, [class*='panel'] h4, [class*='panel'] h5, [class*='panel'] h6{line-height: 1;margin-bottom: 0.55556rem;color: #333333;font-weight: normal;}
+.panel-simple{background: #f3f3f3; border: 1px solid #c0c0c0; padding: 15px; text-align:left !important;}
+.panel-content{border: 1px solid #c0c0c0; text-align:left !important;}
+.panel-head{background: #f3f3f3; padding: 10px 10px;}
+.panel-body{padding: 10px;}
+.panel-footer{background: #f3f3f3; padding: 10px;}
+
+/* Titles */
+.page-title{padding-bottom: 9px;margin: 40px 0 20px;border-bottom: 1px solid #eee; font-size: 36px;}
+
+/* Buttons, Links and Ghosts Buttons */
+.btn{text-align: center; padding: 8px; font-size: 15px; color: #333; border:0; box-shadow: 0 0 5px 0 #ccc; text-transform: capitalize; outline: none; cursor: pointer; text-decoration: none; margin: 1.1111rem 0 1.1111rem 0}
+
+[class*='btn-']{transition: background-color 0.5s ease;}
+
+.btn-buy{background:#5cb85c; color:#fff;}
+.btn-buy:hover{background-color: #7ad07a;}
+
+.btn-sent{background:#1485e7; color:#fff;}
+.btn-sent:hover{background:#3f98e4;}
+
+.btn-warning{background:#efa338; color:#fff;}
+.btn-warning:hover{background:#eeb76a;}
+.btn-error{background:#ed3333; color:#fff;}
+.btn-error:hover{background:#eb5555;}
+
+.btn-ghost-black{background-color: transparent; border: 2px solid #000; box-shadow: 0 0 0 0;}
+.btn-ghost-black a, .btn-ghost-black a:active, .btn-ghost-black a:active{color: #000;}
+.btn-ghost-black:hover{background-color: rgba(156, 156, 156, 0.5);}
+
+.btn-ghost-white{background-color: transparent; color:#fff; border: 2px solid #fff; box-shadow: 0 0 0 0;}
+.btn-ghost-white a, .btn-ghost-white a:active, .btn-ghost-white a:visited{color: #fff;}
+.btn-ghost-white:hover{background-color: rgba(255, 255, 255, 0.5);}
+
+/*Font sizes*/
+.font-12{font-size: 12px;}
+.font-14{font-size: 14px;}
+.font-16{font-size: 16px;}
+.font-18{font-size: 18px;}
+.font-20{font-size: 20px;}
+.font-22{font-size: 22px;}
+.font-24{font-size: 24px;}
+.font-26{font-size: 26px;}
+.font-28{font-size: 28px;}
+.font-30{font-size: 30px;}
+
+
+/* Small */
+@media only screen and (max-width: 640px) {
+.MainContainer{width:100%; margin: 0px auto;}
+body{background: transparent;}
+
+.EstChkLabelCat{display:none;}
+
+/* Visibility */
+.hide-small{display:none;}
+.show-small{display:block !important;}
+
+/* Alignment */
+.text-small-center{text-align: center !important;}
+.text-small-left{text-align: left !important;}
+.text-small-right{text-align: right !important;}
+
+/* Columns */
+[class*='col-small-']{float: left;min-height: 1px;padding: 0px 10px 5px 10px;background-color: transparent;text-align: center;margin: 0;}
+.collapse > [class*='col-small-']{padding: 0px !important;}
+.col-small-1, .col-small-2, .col-small-3, .col-small-4, .col-small-5, .col-small-6, .col-small-7, .col-small-8, .col-small-9, .col-small-10, .col-small-11, .col-small-12 {float: left;}
+.col-small-12{width:100%;}
+.col-small-11{width:91.66667%;}
+.col-small-10{width:83.33333%;}
+.col-small-9{width:75%;}
+.col-small-8{width:66.66667%;}
+.col-small-7{width:58.33333%;}
+.col-small-6{width:50%;}
+.col-small-5{width:41.66667%;}
+.col-small-4{width:33.33333%;}
+.col-small-3{width:25%;}
+.col-small-2{width:16.66667%;}
+.col-small-1{width:8.33333%;}
+}
+
+
+/* Medium */
+@media only screen and (min-width: 641px) {
+.MainContainer {width: 100%;margin: 0 auto;}
+body{background: transparent;}
+
+/* Visibility */
+.hide-medium{display:none}
+.show-medium{display:block !important;}
+
+/* Alignment */
+.text-medium-center{text-align: center !important;}
+.text-medium-left{text-align: left !important;}
+.text-medium-right{text-align: right !important;}
+
+/* Columns */
+[class*='col-medium-']{float: left;min-height: 1px; padding: 0px 10px 5px 10px;background-color: transparent;text-align: center; margin: 0;}
+.collapse > [class*='col-medium-']{padding: 0px !important;}
+.transparent > [class*='col-medium-']{background: transparent !important;}
+.col-medium-1, .col-medium-2, .col-medium-3, .col-medium-4, .col-medium-5, .col-medium-6, .col-medium-7, .col-medium-8, .col-medium-9, .col-medium-10, .col-medium-11, .col-medium-12 {float: left;}
+.col-medium-12{width:100%;}
+.col-medium-11{width:91.66667%;}
+.col-medium-10{width:83.33333%;}
+.col-medium-9{width:75%;}
+.col-medium-8{width:66.66667%;}
+.col-medium-7{width:58.33333%;}
+.col-medium-6{width:50%;}
+.col-medium-5{width:41.66667%;}
+.col-medium-4{width:33.33333%;}
+.col-medium-3{width:25%;}
+.col-medium-2{width:16.66667%;}
+.col-medium-1{width:8.33333%;}
+}
+
+
+/* Large */
+@media only screen and (min-width: 1025px) {
+.MainContainer {width: 1008px;margin: 0 auto;}
+body{background: transparent;}
+
+/* Visibility */
+.hide-large{display:none;}
+.show-large{display:block !important;}
+
+/* Alignment */
+.text-large-center{text-align: center !important;}
+.text-large-left{text-align: left !important;}
+.text-large-right{text-align: right !important;}
+
+/* Columns */
+[class*='col-large-']{float: left;min-height: 1px; padding: 0px 10px 5px 10px;background-color: transparent;text-align: center; margin: 0;}
+.collapse > [class*='col-large-']{padding: 0px !important;}
+.transparent > [class*='col-large-']{background: transparent !important;}
+.col-large-1, .col-large-2, .col-large-3, .col-large-4, .col-large-5, .col-large-6, .col-large-7, .col-large-8, .col-large-9, .col-large-10, .col-large-11, .col-large-12 {float: left;}
+.col-large-12{width:100%;}
+.col-large-11{width:91.66667%;}
+.col-large-10{width:83.33333%;}
+.col-large-9{width:75%;}
+.col-large-8{width:66.66667%;}
+.col-large-7{width:58.33333%;}
+.col-large-6{width:50%;}
+.col-large-5{width:41.66667%;}
+.col-large-4{width:33.33333%;}
+.col-large-3{width:25%;}
+.col-large-2{width:16.66667%;}
+.col-large-1{width:8.33333%;}
+}
+
+
+/* M-Large */
+@media only screen and (min-width: 1366px){
+.MainContainer{width: 1320px ; margin: 0 auto;}
+body{background: transparent;}
+
+/* Visibility */
+.hide-mlarge{display:none;}
+.show-mlarge{display:block !important;}
+
+/* Alignment */
+.text-mlarge-center{text-align: center !important;}
+.text-mlarge-left{text-align: left !important;}
+.text-mlarge-right{text-align: right !important;}
+
+/* Columns */
+[class*='col-mlarge-']{float: left;min-height: 1px; padding: 0px 10px 5px 10px;background-color: transparent;text-align: center;}
+.collapse > [class*='col-mlarge-']{padding: 0px !important;}
+.transparent > [class*='col-mlarge-']{background: transparent !important;}
+.col-mlarge-1, .col-mlarge-2, .col-mlarge-3, .col-mlarge-4, .col-mlarge-5, .col-mlarge-6, .col-mlarge-7, .col-mlarge-8, .col-mlarge-9, .col-mlarge-10, .col-mlarge-11, .col-mlarge-12 {float: left;}
+.col-mlarge-12{width:100%;}
+.col-mlarge-11{width:91.66667%;}
+.col-mlarge-10{width:83.33333%;}
+.col-mlarge-9{width:75%;}
+.col-mlarge-8{width:66.66667%;}
+.col-mlarge-7{width:58.33333%;}
+.col-mlarge-6{width:50%;}
+.col-mlarge-5{width:41.66667%;}
+.col-mlarge-4{width:33.33333%;}
+.col-mlarge-3{width:25%;}
+.col-mlarge-2{width:16.66667%;}
+.col-mlarge-1{width:8.33333%;}
+}
+
+/* X-Large */
+@media only screen and (min-width: 1441px) {
+.MainContainer {width: 1426px;margin: 0 auto;}
+body{background: transparent;}
+
+/* Visibility */
+.hide-xlarge{display:none}
+.show-xlarge{display:block !important;}
+
+/* Alignment */
+.text-xlarge-center{text-align: center !important;}
+.text-xlarge-left{text-align: left !important;}
+.text-xlarge-right{text-align: right !important;}
+
+/* Columns */
+[class*='col-xlarge-']{float: left;min-height: 1px; padding: 0px 10px 5px 10px;background-color: transparent;text-align: center;}
+.collapse > [class*='col-xlarge-']{padding: 0px !important;}
+.transparent > [class*='col-xlarge-']{background: transparent !important;}
+.col-xlarge-1, .col-xlarge-2, .col-xlarge-3, .col-xlarge-4, .col-xlarge-5, .col-xlarge-6, .col-xlarge-7, .col-xlarge-8, .col-xlarge-9, .col-xlarge-10, .col-xlarge-11, .col-xlarge-12 {float: left;}
+.col-xlarge-12{width:100%;}
+.col-xlarge-11{width:91.66667%;}
+.col-xlarge-10{width:83.33333%;}
+.col-xlarge-9{width:75%;}
+.col-xlarge-8{width:66.66667%;}
+.col-xlarge-7{width:58.33333%;}
+.col-xlarge-6{width:50%;}
+.col-xlarge-5{width:41.66667%;}
+.col-xlarge-4{width:33.33333%;}
+.col-xlarge-3{width:25%;}
+.col-xlarge-2{width:16.66667%;}
+.col-xlarge-1{width:8.33333%;}
+}
+
+
+/* reset */
+#idCheckoutFC .EstChkOptSit, .EstTitCheckoutFC, .EstChkTabTopo, #idCheckoutFC .EstChkNomeCampo, #idChkFreightIntFC p, #idCheckoutFC .EstNomePagto,
+#idCheckoutFC .smText, #idCheckoutFC .EstChkValorCampo, #idCheckoutFC .smSelect, #idChkCartIntFC table, #idTxtPaymentMethodFC, #idTxtErrFieldSenhaAtualFC,
+.EstTxtErrField,#idCheckoutFC .EstChkTabTopo, #idCheckoutFC .EstTabPagtoTit, .EstTabPedidoTit, .EstTabPedidoNome, .EstTabPedidoRef,.EstTabPedidoAdicNome, .EstTabPedidoAdicItem
+{font-size: 100%;  font: inherit;}
+
+#idFCContent{width: 100%;}
+/* Checkout */
+
+.FCCheckoutMain{position: relative; display: table;}
+
+
+#idCheckoutFC .EstChkTabTopo {font-size: 14px; font-weight: normal;}
+#idCheckoutFC .EstChkNomeCampo {font-size: 12px;}
+
+#idChkRegisterIntFC .InputText, #idChkRegisterIntFC .smSelect{height: 20px; box-shadow: inset 1px 1px 2px #cccccc;}/*height: 30px;*/
+
+.EstTabQuadro{background: transparent;}
+.EstTabPagto *, *:after, *:before{box-sizing: content-box !important;}
+.EstTxtErrField{border-radius: 3px;font-size: 11px !important;padding: 5px 10px;}
+#xidChkPaymentFC img{width: 45px; height: 29px;}
+#idCheckoutFC td{padding: 0 3px;}
+#idChkLoginIntFC #idTxtLinkContinueFC{background: url("../images/btnContLogin.png") no-repeat scroll 0% 0% transparent !important; width: 255px; height: 100px; line-height: 33px;}
+#idCheckoutFC #idIdentifyFC{margin: 0 0 15px 0;}
+#idChkLoginIntFC .EstTitCheckoutFC{background: transparent;}
+#idChkLoginIntFC{border: 0;}
+#idCheckoutFC .EstTitCheckoutFC {font-size: 14px;}
+#idCheckoutFC #idChkTopFC{height: 72px;}
+
+
+#idCheckoutFC .EstTitCheckoutFC{border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;border-top-left-radius: 3px; border-top-right-radius: 3px;}
+#idFCLeftContentRight input[type='text'], #idFCLeftContentRight input[type='password']{padding:0 5px !important; min-height: 20px !important;}/*min-height: 27px */
+select{min-height: 27px;}
+
+#idChkRegisterFC input[type='text'], #idChkRegisterFC input[type='password']{margin: 5px 0 5px 0;border-radius: 5px;}
+#idChkRegisterFC .EstChkTabTopo{font-size: 18px; color:#4e5255;  font-weight: bold;}
+/*Login Checkout*/
+.zFCheckoutDuvidas{color: #4d4d4d; font-size: 14px; margin: 10px 0; display: none;}
+.zFCheckoutDuvidas a{color: #a90606;}
+#idChkLoginIntFC{width: 100%;margin-top: 50px;}
+.FCCheckoutLogin #idChkLoginIntFC{max-width: 490px; background-color:transparent; border-radius: 8px !important; padding-top: 15px;}
+.FCCheckoutLogin #idChkLoginIntFC .EstTitCheckoutFC{font-size: 18px; color:#ff4a4a;font-family: 'Lora', serif;}
+.FCCheckoutLogin .EstTabQuadro{background:transparent !important;}
+.FCCheckoutLogin #Email, .FCCheckoutLogin #SenhaAtual{box-shadow: 1px 1px 4px #ccc inset !important;height: 40px;}
+.FCCheckoutLogin #idTabLoginFC #SenhaAtual{width: 100%!important;}
+.FCCheckoutLogin .EstChkRequiredField, .FCCheckoutLogin .EstChkOptSit {color: #4d4d4d;}
+.FCCheckoutLogin #idChkLoginIntFC .EstChkNomeCampo{ font-weight: normal;}
+/*.FCCheckoutLogin #idTabOptSitFC{width:  100% ;}*/
+.FCCheckoutLogin .EstChkOptSit label{ font-size: 12px; font-weight: normal;}
+.FCCheckoutLogin #idIdentifyFC{display: table; height: 75px; width: 270px;}
+#idCheckoutFC #idTxtLinkContinueFC{display: none;}
+#idCheckoutFC #idImgLinkContinueFC {display: block;}
+
+#idChkLoginIntFC .EstErrField{position: relative; top: 5px;}
+#idChkEmailLoginFC{white-space: nowrap;}
+#idTabLoginFC #Email{width: 100%;}
+
+#idChkLoginIntFC .EstChkNomeCampo{vertical-align: middle;}
+#idChkOrderConfirmationFloat, #idDivLinkContinueFC{width:100% !important; border-radius: 0 !important; border: 0;}
+#idCheckoutFC #idImgLinkConfirmFC {display: block;}
+#idCheckoutFC a #idTxtLinkContinueFC{background-color: #6ea853; padding: 10px; cursor: pointer; border-radius: 0 !important; color: #FFFFFF;font-weight: bold; text-align: center;}
+
+#idChkTabResellerFC{margin: 0 auto;}
+
+#idCheckoutFC #SenhaAtual{margin: 0 0 0 5px; width: 65% !important;}
+.EstChkOptSit, .EstChkRadioOptSit{vertical-align: middle;}
+.EstChkDiv{border-radius: 0 !important; border: 0;}
+
+#P2Estado{width: 45px !important;}
+
+#idChkTabRegisterFC tr td{vertical-align: middle !important;}
+
+#idCheckoutFC .EstChkTabTopo{border-radius: 0 !important; background: transparent;}
+
+#idChkCol3FC td{padding: 4px 4px;box-sizing: border-box;font-size: .86em;}
+
+#idChkCompletionIntFC span{line-height: 22px; font-size: 13px;}
+#idChkCompletionIntFC div{margin:10px 0 !important; font-size: 13px;}
+#idCheckoutFC .EstTabPayment{width: 100%;}
+#idCheckoutFC .EstTabPayment td{vertical-align: middle;}
+
+/*.EstTabPayment .InputText{width: 75% !important;}*/
+#idChkCCIntFC{width: 97%; clear: both;}
+
+.zFDivisorCheck:before{content: url(../images/zfcheckoutdivisor.png); width: 1px; min-height: 330px; float: left; z-index: 999; position: relative;}
+.zFFinishBuyBtn{background: transparent url(../images/zffinishbuy.png); min-height: 55px;}
+
+#idChkCol3FC .EstTabPedidoTit{background:#e8e4e3; color: #000; font-weight:bold;padding: 10px; border-right: 2px solid #fff;}
+#idChkCol3FC .EstTabPedido{background:#f0f0f0;border-right: 2px solid #fff;}
+#idChkCol3FC .EstTabPedidoNum{background:#f0f0f0;}
+.EstTabPedidoTotal:first-child{border-right: 2px solid #fff;}
+.EstTabPedidoTotal{border-bottom: 2px solid #fff;}
+.EstTabPedidoTotal{background:#e8e4e4; font-weight: bold; font-size: 12px !important;}
+.EstTabPedidoFrete{font-weight: bold; font-size: 12px !important; background:#e8e4e4;}
+.EstTabPedidoFrete:first-child{background:#e8e4e4; border-right: 2px solid #fff;}
+
+.FCChkOrderConfirmationFloat{ width: 280px; height: 72px; position: relative; float: right;}
+
+/* REGISTER DIV */
+.FCRegisterChk{width: 320px!important; position: relative; padding: 0px; float: left; clear: right;}
+
+/* FREIGHT/ PAYMENT */
+.FCFreightChk{width: 320px!important; position: relative; padding: 4px; float: left; clear: right;}
+#idChkFreightIntFC{background: transparent;}
+#idChkFreightIntFC p{font-size: 14px;}
+#idTxtFreightFC p{font-size: 12px; text-align: left; color: #7d7d7d; line-height: 16px;}
+#idTxtCEPFreightFC p, #idTxtSEDEXFreightFC p, #idChkPaymentFC p{font-size: 14px; text-align: left; color:#7d7d7d; line-height: 20px;}
+#idValueFreightFC span{font-size: 14px;}
+#idTabFreteOptFC{width: 90%;}
+#idTabFreteOptFC label, #idTabFreteOptFC span{font-size: 12px;}
+#idTabFreteOptFC #idTxtObsCEPFC{color: #7d7d7d; font-weight: normal; display: block; margin: 3px 0;}
+#idCheckoutFC .EstDivParcels{width: 99%; margin: 0 !important; float: left;}
+#idCheckoutFC .EstDivParcels select{width: 85%; height: 30px; margin: 10px 0 10px 22px; font-size: 12px;}
+#idCheckoutFC .smSelect{font-size: 12px; height: 30px;}
+#idTRccSegFC a{clear: both;display: inline-block; margin: 5px 0 0 0;font-size: 12px; max-width:50px;}
+.EstChkDiv .smText #P2ccSeg{max-width: 80px;}
+#idTxtOptinCardFC{font-size: 12px;}
+
+#idCheckoutFC .EstTabPagtoTit{ padding: 10px 5px !important; font-size: 14px; font-weight: bold;}
+.EstTabPayment .EstNomePagto label{font-size: 12px;}
+/* CART */
+.FCCartChk{/*width: 350px!important;*/ position: relative; padding: 4px; float: left; clear: right;}
+.EstTabPedidoTit{font-size: 13px;}
+.EstTabPedidoNome{font-size: 13px;display: block;/* height: 60%; */}
+.EstTabPedidoRef{display: block; padding: 0; margin:0; width: 100%;}
+.EstTabPedidoAdicNome, .EstTabPedidoAdicItem{ display: block; float: left; padding-right: 5px;}
+#idChkExtCartFC{max-width: 340px!important;}
+.EstTabPedido br{display: none;}
+
+
+/*#idChkRegisterIntFC .EstTitCheckoutFC{background:transparent url(../images/step1cart.svg) no-repeat 5px 6px !important; background-size:43px 37px !important; min-height: 39px; padding-left: 51px; text-align: left !important; line-height: 29px; color: #4e5255 !important;}
+#idTitFreightFC{background:transparent url(../images/step2cart.svg) no-repeat 5px 6px !important; background-size:43px 37px !important; min-height: 39px; padding-left: 51px; text-align: left !important; line-height: 29px; color: #4e5255 !important;}
+#idTitPaymentFC{background:transparent url(../images/step3cart.svg) no-repeat 5px 6px !important; background-size:43px 37px !important; min-height: 39px; padding-left: 51px; text-align: left !important; line-height: 29px; color: #4e5255 !important;}
+#idTitCartFC{background:transparent url(../images/step4cart.svg) no-repeat 5px 6px; background-size:43px 37px !important; min-height: 39px; padding-left: 51px; text-align: left !important; line-height: 29px; color: #4e5255 !important;}*/
+#idChkRegisterIntFC .EstTitCheckoutFC{background:transparent url(../images/step1cart.svg) no-repeat 5px 1px !important; background-size:38px 19px !important; min-height: 15px; padding-left: 44px; text-align: left !important; line-height: 6px;  color: #4e5255 !important;}
+#idTitFreightFC{background:transparent url(../images/step2cart.svg) no-repeat 5px 1px !important; background-size:38px 19px !important; min-height: 15px; padding-left: 44px; text-align: left !important; line-height: 6px; color: #4e5255 !important;}
+#idTitPaymentFC{background:transparent url(../images/step3cart.svg) no-repeat 5px 1px !important; background-size:38px 19px !important; min-height: 15px; padding-left: 44px; text-align: left !important; line-height: 6px; color: #4e5255 !important;}
+#idTitCartFC{background:transparent url(../images/step4cart.svg) no-repeat 5px 1px !important; background-size:38px 19px !important; min-height: 15px; padding-left: 44px; text-align: left !important; line-height: 6px; color: #4e5255 !important;}
+#idTxtPaymentFC{margin: 10px 0; padding: 0 15px;}
+#idTabLoginFC{width: 80%; margin: 0 auto; padding: 0 5px 0 5px;}
+
+/* Confirmation*/
+#idChkOrderConfirmationFC{width: 270px;}
+#idDivLinkContinueFC{width: 100%;}
+
+
+#idChkTxtPedConfirmadoFC { border-color: #e9b3bf; border-radius: 0; padding: 0 5px;}
+#idChkTxtTimeCompletionFC p {font-size: 12px!important; font-family: arial, tahoma !important;}
+.zFConfirmationTit{color: #333!important; font-size: 16px !important; font-weight: bold!important; padding: 15px 0 0 0!important; text-transform: uppercase!important;}
+#idChkTabRegisterFC .zFConfirmationTit { padding: 6px 0 13px 0!important;}
+#idChkOrderNumberFC { height: 30px;display: inline-block; border-top: 0; border-bottom: 0; border-color: #e9b3bf;}
+#idShowOrderDetailsFC a { color: #a90606; display: inline-block;}
+#idTxtTrackConfFC a {color: #a90606; display: inline-block;}
+
+#idChkCol1FC, #idChkCol2FC, #idChkCol3FC{min-height: 1px;}
+#idCheckoutFC .EstChkValorCampo{font-size:1em;}
+#idChkCartIntFC a{font-weight: bold;color: #4e5255;}
+.EstTabPedidoNum{font-weight: bold;color:#4e5255; font-size: 12px;}
+@media only screen and (max-width: 1023px){
+  .zFMenuNavTop h5{padding-top: 10px;}
+  #idFCContent{max-width: 600px!important; margin: 0px auto;}
+  /* CHECKOUT *//* ORDER CONFIMATION FLOAT */
+  #idTabLoginFC{width: 80%;}
+
+  #idChkAllFC { width: 600px!important;}
+
+  .FCCheckoutMain{width: 600px;}
+  .FCChkOrderConfirmationFloat{}
+
+  /* REGISTER */
+  .FCRegisterChk{width: 500px !important;}
+  #idChkRegisterIntFC {max-width: 500px !important; width: 100%;}
+
+  /* FREIGHT/ PAYMENT */
+  .FCFreightChk{width: 500px!important; max-width:500px!important;}
+  #idChkFreightIntFC {max-width: 500px !important;}
+  #idChkPaymentIntFC {max-width: 500px!important; width: 100%;}
+
+  /* CART */
+  .FCCartChk{width: 500px!important;}
+  #idChkExtCartFC{max-width:500px!important; float: none;}
+  #idChkCartIntFC { width: 100%!important; /*330px*/  max-width: 500px!important;}
+
+  /* Remove Float*/
+  #idChkCol1FC{float: none !important; margin: 0 auto;}
+  #idChkCol2FC,#idChkCol3FC{float: none !important; position: relative !important; margin: 0 auto;}
+  #idChkTagsCol2FC,#idChkExtCartFC{position: relative !important;}
+  .zFDivisorCheck:before{content: "";}
+  #idChkFreightIntFC{width: 500px;}
+}
+
+@media only screen and (max-width: 640px){
+  #idFCContent{max-width: 100% !important; margin: 0px auto;}
+  .FCCheckoutLogin{width: 100%; padding:0 10px;}
+  #idChkLoginIntFC{width: 100%;}
+
+  /* CHECKOUT *//* ORDER CONFIMATION FLOAT */
+  #idChkAllFC { width: 100%!important;}
+
+  .FCCheckoutMain{width: 90%;}
+  .FCChkOrderConfirmationFloat{}
+
+  /* REGISTER */
+  .FCRegisterChk{width: 100%!important;}
+  #idChkRegisterIntFC {max-width: 100% !important; width: 100%;}
+
+  /* FREIGHT/ PAYMENT */
+  .FCFreightChk{width: 100%!important; max-width:100%!important;}
+  #idChkFreightIntFC {max-width: 100% !important; width: 100%;}
+  #idChkPaymentIntFC {max-width: 100% !important; width: 100%;}
+
+  /* CART */
+  .FCCartChk{width: 100% !important;}
+  #idChkExtCartFC{max-width: 100% !important; float: left; width: 100%;}
+  #idChkCartIntFC { width: 100% !important;  max-width: 100% !important;}
+
+  #idImgLinkConfirmFC{max-width: 60%; float: right;}
+  /* Remove Float*/
+  #idChkCol1FC{float: left !important;}
+  #idChkCol2FC,#idChkCol3FC{float: left !important; position: relative !important;}
+  #idChkTagsCol2FC,#idChkExtCartFC{position: relative !important;}
+  #idTabLoginFC{width: 100%;}
+  .zFDivisorCheck:before{min-height: 0;}
+}
+
+
+@media only screen and (min-width: 1024px){
+	/* LARGURA */
+	#idChkAllFC { width: 940px!important;}
+
+	/* REGISTER */
+	.FCRegisterChk{width: 310px!important;}
+/*	#idChkRegisterIntFC {max-width: 310px !important;}*/
+
+	#idChkRegisterIntFC { width: 100%!important; max-width: 305px!important;}
+
+	/* FREIGHT/ PAYMENT */
+	.FCFreightChk{width: 305px!important; max-width:305px!important;}
+	#idChkFreightIntFC, #idChkFreightIntFC, #idChkPaymentIntFC{width: 96% !important; max-width: 305px !important;}
+
+	.FCCartChk{width: 310px;}
+	#idChkExtCartFC {max-width: 312px !important; padding: 0 0 0 8px;}
+	#idChkCartIntFC {min-width: 300px !important;  width: 100% !important;}
+
+  #idCheckoutFC #idChkCol3FC { width: 320px;}
+  .FCCartChk{width: 320px!important;}
+	/*#idTabLoginFC{width: 55%;}*/
+
+	.zFMenuNavTop h5{padding: 10px 0;}
+
+	.zFBeforeDivisor:before{content: url(../images/xdivisor.png); width: 2px; height: 750px;float: left; margin-top: 60px;}
+	.zFBeforeDivisor2:before{content: url(../images/xdivisor.png); width: 2px; height: 750px;float: left; margin-top: 60px;}
+}
+
+
+@media only screen and (min-width: 1366px){
+	/* CHECKOUT *//* ORDER CONFIMATION FLOAT */
+	#idChkAllFC { width: 1140px!important; }
+
+	.FCCheckoutMain{width: 1150px;}
+
+	/* REGISTER */
+	.FCRegisterChk{width: 390px!important;}
+	#idChkRegisterIntFC {max-width: 390px !important;}
+
+	/* FREIGHT/ PAYMENT */
+	.FCFreightChk{width: 380px!important; max-width:380px!important;}
+	#idChkFreightIntFC, #idChkFreightIntFC, #idChkFreightIntFC{width: 380px !important; max-width: 380px !important;}
+	#idChkPaymentIntFC {max-width: 370px!important;}
+
+	/* CART */
+	.FCCartChk{width: 370px!important;}
+	#idChkExtCartFC {max-width: 370px !important; padding: 0 8px;}
+	#idChkCartIntFC {min-width: 360px !important;  width: 100% !important;}
+	/*#idTabLoginFC{width: 45%;}*/
+}
+/*old style chkout*/
+.EstChkDiv {
+border-width: 1px !important;
+border-style: solid !important;
+border-color: #dedede !important;
+padding:4px !important;
+margin:0px 0px 10px 0px !important;
+border-radius: 5px !important;
+-moz-border-radius: 5px !important;
+-webkit-border-radius: 5px !important;
+}
+#idCheckoutFC .EstChkTabTopo {
+    padding: 8px 3px 8px 15px;
+    background-color: #F1F1F1;
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial,Tahoma,Verdana;
+    font-weight: bold;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+/*ckout*/
+#P2ccNum {
+font-size: 1.2em !important;
+}
+#P2ccNome {
+font-size: 1.14em !important;
+}
