@@ -1,0 +1,97 @@
+<div class="row">
+	<div class="container zFContactUs">
+		<h1 class="zFPageTitle Titulos">Contato</h1>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<p>Estamos à disposição para ouvir você. Utilize esse espaço para enviar dúvidas, sugestões, elogios ou reclamações.</p>
+			<p>Para entrar em contato, preencha o formulário. Assim que possível, a nossa equipe entrará em contato.</p>
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="zFTalkToUsIconText">
+							<span class="text-left ">Atendimento via telefone </span>
+							<h2 class="font-primary">(11) 3862-3205</h2>
+							<span class="text-left ">Atendimento via Whatsapp</span>
+					        <h2 class="font-primary">(11) 95375-9374</h2>
+			          De segunda a sexta-feira das 9h às 17h30					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div id="formDest" class="col-xs-12 col-sm-11 col-md-11 col-lg-12 pull-right">
+				<form name=form method="POST" action="EnviaMail.asp" class="form-horizontal">
+	        <input type=hidden name="NomePara" value='Lingerie'>
+	        <input type=hidden name="EmailPara" value='lingerie@lingerie.com.br'>
+	        <input type=hidden name="Assunto" value='Contato loja virtual - Lingerie'>
+	        <input type=hidden name="URLRetorno" value='/custom.asp?IDLoja=<IDLoja>&arq=obrigado.html'>
+	        <input type=hidden name="OrdemCampos" value='Nome,EmpresaMsg,EmailDe,AssuntoSelect,Tel,ProdMsg,Mensagem'>
+	        <p id="formSubject"></p>
+
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>*Nome:</label>
+				      <input type="text" name="Nome" class="form-control" required>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>Empresa:</label>
+				      <input type="text" name="EmpresaMsg" class="form-control">
+				    </div>
+				  </div>
+                  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>*E-mail:</label>
+				      <input type="email" name="EmailDe" class="form-control" required>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>*Assunto:</label>
+				      <select name="AssuntoSelect" id="zFSelectContact" required>
+				      	<option value="Ass1">Dúvidas</option>
+				      	<option value="Ass2">Sugestão</option>
+				      	<option value="Ass3">Reclamação</option>
+                        <option value="Ass4">Elogio</option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>*Telefone:</label>
+				      <input type="text" name="Tel" class="form-control" required>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>Produto:</label>
+				      <input type="text" name="ProdMsg" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				    	<label>*Mensagem:</label>
+				      <textarea name="Mensagem" class="form-control" rows="3" required></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="submit" alt="Clique para enviar" value="Enviar" class="zFContactSubmitBtn pull-right">
+				    </div>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 zFCommercialInfo">
+		<span>Escritório Comercial</span>
+		<p>Rua Desembargador do Vale, 194 - Perdizes - São Paulo / SP</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.963858354711!2d-46.6832221352433!3d-23.53282738542099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e467b7ce73%3A0x2c5a8b80c727947d!2sR.+Des.+do+Vale%2C+194+-+Perdizes%2C+S%C3%A3o+Paulo+-+SP%2C+05010-040!5e0!3m2!1spt-BR!2sbr!4v1468269207652" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div>
