@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+   <head>
+      <title>XML</title>
+      <style>
+      img {border:0px}
+      a {font-size:8pt;color:#333333;font-family:tahoma,verdana;font-weight:bold;text-decoration:underline}
+      .EstTitXML {background:#EFEFEF;font-size:8pt;color:#333333;font-family:tahoma,verdana;font-weight:bold}
+      .EstPrecoProdCapaXML {color:#930000;font-size:8pt;font-family:arial;font-weight:bold}
+      .BordaHistory {border-style:solid;border-width:1px;border-color:#D4D6D8}
+      .EstTabTopoXML {padding:2px 2px 2px 2px;background:#E9E9E9;color:#333333;font-size:9pt;font-family:verdana;font-weight:bold}
+      </style>
+   </head>
+   <body>
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div style="font-size:16px;font-family:Arial,Tahoma,Verdana,Helvetica,sans-serif;color:#F16196;text-align:center">Histórico de Navegação</div></td>
+  </tr>
+</table>
+      <table width="100%" height="250" border="0" cellspacing="0" cellpadding="0" style="border:#D4D6D8 solid 1px;">
+          <tr>
+            <xsl:for-each select="HistoryProd/item">
+              <td align="center" valign="top"><br />
+	              <table width="150" height="150" border="0" class="BordaHistory">
+	                <tr>
+	                  <td align="center" height="20" class="EstTitXML">
+						<xsl:element name="a">
+						  <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
+						  <xsl:attribute name="target">_top</xsl:attribute>
+						  <xsl:value-of select="title"/> <!-- Nome do produto ou title da custom -->
+						</xsl:element>
+	                  </td>
+	                </tr>
+	                <tr>
+	                  <td align="center">
+						<xsl:if test="string-length(image)>0">						
+						<xsl:element name="a">
+						  <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
+						  <xsl:attribute name="target">_top</xsl:attribute>
+						  <img>
+						  <xsl:attribute name="src"> <!-- Chamada da imagem -->
+						    <xsl:value-of select="image" />
+						  </xsl:attribute>
+						  <xsl:attribute name="alt"> <!-- alt da imagem -->
+						    <xsl:value-of select="title" />
+						  </xsl:attribute>
+  						  <xsl:attribute name="width"> <!-- alt da imagem -->
+						    100
+						  </xsl:attribute>
+						</img>
+						</xsl:element>
+						</xsl:if>
+	                  </td>
+	                </tr>
+	                <tr>
+	                  <td align="center" class="EstPrecoProdCapaXML">                    
+	                    <xsl:value-of select="price"/> <!-- preço do produto -->
+	                  </td>
+	                </tr>
+	              </table>
+              </td>
+            </xsl:for-each>
+          </tr>
+      </table>
+   </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
