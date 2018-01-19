@@ -1,0 +1,115 @@
+
+
+.EstChkRequiredField {color:#7777777;font-size:13px;font-family:Arial,Tahoma,Verdana;}
+#idWaitingFullFC{left:0px;top:0px;width:5000px;height:5000px;background-color:white;z-index:1002;-moz-opacity:0.5;opacity:0.5;filter:alpha(opacity=50);position:fixed;}
+#idWaitingFullFC img{-moz-opacity:0.7;opacity:0.7;filter:alpha(opacity=70);}
+#idWaitingFullImgFC{position:fixed;}
+#idChkPleaseWaitFC{position:fixed;z-index:1003;width:400px;background-color:white;}
+#idChkPleaseWaitFC table{width:400px;padding:5px;border-width:1px;border-style:solid;border-color:#dedede;}
+
+#idWaitingAllFC, #idWaitingLoginFC, #idWaitingRegisterFC, #idWaitingCartFC, #idWaitingFreightFC, #idWaitingPaymentFC{width:150px;height:150px;background-color:#f1f1f1;text-align:center;vertical-align:middle;z-index:1001;-moz-opacity:0.7;opacity:0.7;filter:alpha(opacity=70);padding:0px;overflow-x: hidden;margin:0px;display:none;}
+
+#idCheckoutFC td{text-align:left;}
+#idCheckoutFC textarea{resize:none;}
+#idCheckoutFC .EstChkNomeCampo{text-align:right;vertical-align:text-top;font-weight:normal;font-family:Arial,Tahoma,Verdana;font-size:12px;}
+#idCheckoutFC .EstChkValorCampo{font-family:Arial,Tahoma,Verdana;font-size:13px}
+
+#idCheckoutFC .EstTabPedidoTotal{text-align:right;}
+#idCheckoutFC .EstTabPedidoFrete{text-align:right;}
+#idCheckoutFC .EstTitCheckoutFC{font-weight:bold;font-size:14px;font-family:Arial,Tahoma,Verdana;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;text-align:center;color:#777777;margin-bottom:3px;}
+#idCheckoutFC .EstNomePagto{font-size:11px;font-family:Arial,Tahoma,Verdana;}
+#idCheckoutFC .EstTabPayment{margin-top:5px;background-color:#fcfcfc;padding:5px;border-width:1px;border-style:solid;border-color:#dedede;}
+#idCheckoutFC .EstChkTabTopo{padding:8px 3px 8px 15px;background-color:#F1F1F1;color:#555555;font-size:12px;font-family:Arial,Tahoma,Verdana;font-weight:bold;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+
+#P2PPais{width:180px;}
+#P2Pais{width:180px;}
+#idChkEmailLoginFC{width:40px;}
+.EstChkRadioOptSit{width:20px;}
+#TabItens{margin-bottom:10px;}
+#idValueFreightFC{margin-bottom:10px;}
+#idChkMsgRemindPasswordFC{border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;padding:8px;}
+
+#idColDescOrderFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px;padding:10px;}
+#idColPriceOrderFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px;padding:10px;}
+#idColTotalPedidoVistaFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius:0px 0px 0px 0px;height:26px}
+#idTotalPedidoVistaFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 10px 0px;height:26px}
+#idColTotalPedidoPrazoFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px;height:26px}
+#idTotalPedidoPrazoFC{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px;height:26px}
+
+.EstTabPagtoExt .EstTabPagtoTit{border-radius: 0px 0px 0px 0px; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px;padding:8px;}
+ 
+#idCheckoutFC .BotChkPaymentContinue{background-color:#333;color:#fcfcfc;font-weight:bold;font-size:13px;font-family:Arial,Tahoma,Verdana;height:40px;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+.EstTabPayment, #idImgPagto1FC,#idImgPagto2FC,#idImgPagto3FC,#idImgPagto4FC, #idImgPagto5FC, #idImgPagto6FC, #idImgPagto7FC, #idImgPagto8FC,#idImgPagto9FC, #idImgPagto10FC, #idImgPagto11FC,  #idImgPagto12FC, #idImgPagto14FC, #idImgPagto15FC, #idImgPagto16FC, #idImgPagto17FC, #idImgPagto18FC, #idImgPagto19FC, #idImgPagto20FC, #idImgPagto21FC, #idImgPagto22FC, #idImgPagto23FC,#idImgPagto3_1FC, #idImgPagto3_2FC, #idImgPagto3_3FC, #idImgPagto3_4FC, #idImgPagto3_5FC, #idImgPagto3_6FC, #idImgPagto3_7FC{padding:4px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; border: 1px solid #CCCCCC;}
+
+#idDivLinkContinueFC{width:154px;height:39px;border-width:0px;border-style:solid;border-color:#009999;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#idTxtPaymentMethodFC{font-size:13px;font-family:Arial,Tahoma,Verdana;margin-top:7px;margin-bottom:7px;}
+
+#idCheckoutFC .EstTabPayment{margin-top:5px;background-color:#fcfcfc;padding:5px;border-width:1px;border-style:solid;border-color:#dedede;}
+#idCheckoutFC .EstTabPagtoExt{background-color:#fcfcfc}
+#idCheckoutFC .EstTabPagtoTit{background-color:#ededed;color:#444444;font-size:11px;font-family:Arial,Tahoma,Verdana;font-weight:bold;padding:5px;}
+
+#idBotPaymentOpenFC{text-align:center;}
+#idTabFormaPagtoFC .smSelect{font-size:10px;font-family:Arial,Tahoma,Verdana;}
+
+.EstTitCheckoutFC{background-color:#FFFFFF;padding:8px;color:#2AB2DF;font-size:13px;font-family:Arial,Tahoma,Verdana;}
+.EstChkDiv{border-width:1px;border-style:solid;border-color:#dedede;padding:4px;margin:0px 0px 10px 0px;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+
+#idChkTxtPedConfirmadoFC{margin-top:20px;background-color:#fcfcfc;padding:5px;border-width:1px;border-style:solid;border-color:#dedede;text-align:center;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#idChkOrderNumberFC{background-color:#ffffff;padding:5px;border-width:1px;border-style:solid;border-color:#dedede;font-size:16px;font-family:Arial,Tahoma,Verdana;color:#2AB2DF;}
+#idChkTxtTimeCompletionFC p{font-size:9px;font-family:Arial,Tahoma,Verdana;text-align:center;}
+.EstChkTextoContinuar{font-size:13px;font-weight:bold;color:#000000;font-family:Arial,Tahoma,Verdana;}
+
+#idChkRegisterIntFC #P2Mensagem{height:80px;}
+#idCheckoutFC .InputText{font-size:11px;font-family:Arial,Tahoma,Verdana;border-color:#dedede;border-width:1px;border-style:solid;background-color:#fcfcfc;color:#777777;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+
+#idChkRegisterIntFC .InputText{height:16px;}
+#idChkLoginIntFC .InputText{height:18px;}
+
+#idCheckoutFC .smSelect{font-size:11px;font-family:Arial,Tahoma,Verdana;border-color:#dedede;border-width:1px;border-style:solid;background-color:#fcfcfc;color:#777777;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#idCheckoutFC .smText{font-size:10px;font-family:Arial,Tahoma,Verdana;}
+#idCheckoutFC .EstChkOptSit{font-size:11px;font-family:tahoma,arial}
+#idChkLoginIntFC .EstChkNomeCampo{font-size:13px;font-family:Arial,Tahoma,Verdana;font-weight:bold;}
+
+#idChkEmailLoginFC{width:55px;}
+#idTabLoginFC #Email{font-size:10pt;width:210px;box-shadow: 0px 0px 2px 0px #ddd inset;padding: 3px 3px 3px 3px;}
+#idTabLoginFC #SenhaAtual{font-size:10pt;box-shadow: 0px 0px 2px 0px #ddd inset;}
+
+#idCheckoutFC #idImgLinkContinueFC{display:none;}
+#idCheckoutFC #idImgLinkConfirmFC{display:none;}
+#idCheckoutFC #idLinkContinueFC{color:#fcfcfc;text-decoration:none;font-size:16px;font-family:Arial,Tahoma,Verdana;font-weight:bold;padding:0px;}
+#idCheckoutFC #idTxtLinkContinueFC{background-color:#2AB2DF;width:165px;height:21px;cursor:pointer;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;font-family:'ContaxSans55Reg-webfont','ContaxSans55Reg-webfont',Arial,Tahoma,Verdana;font-size:15px;color:#ffffff;text-transform: uppercase;text-align:center;}
+#idCheckoutFC .EstChkOrderConfirmationFC{height:40px;}
+#idCheckoutFC #idChkTopFC{text-align:center;height:60px;}
+#idChkOrderConfirmationFloat{width:200px;height:40px;padding:0px;}
+
+#idCheckoutFC #idChkCol1FC{width:290px;}
+#idCheckoutFC #idChkCol2FC{width:300px;}
+#idCheckoutFC #idChkCol3FC{width:340px;}
+
+#idChkAllFC{width:970px;}
+#idChkLoginIntFC{width:300px;background-color:#FFFFFF;}
+#idChkRegisterIntFC{width:280px;background-color:#FFFFFF;}
+#idChkCompletionIntFC{position:relative;left:20px;width:520px;background-color:#FFFFFF;}
+#idChkCartIntFC{width:330px;background-color:#FFFFFF;}
+#idChkFreightIntFC{width:290px;background-color:#FFFFFF;}
+#idChkPaymentIntFC{width:290px;background-color:#FFFFFF;}
+#idChkCCIntFC{width:245px;margin-top:10px;}
+
+#idChkFreightIntFC p{font-size:11px;font-family:Arial,Tahoma,Verdana;padding:5px;}
+
+#idChkULPlacesFC{list-style:none;padding: 2px 2px 2px 0px;margin: 3px 0px 3px 0px;}
+#idChkULPlacesFC li{background-color:#F1F1F1;border-style:solid;border-width:1px;border-color:#777777;margin: 5px 0px 2px 0px;padding:3px;font-size:10px;font-family:Arial,Tahoma,Verdana;border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+#idChkULPlacesFC td{font-size:10px;font-family:Arial,Tahoma,Verdana;}
+.EstChkNomePlace{font-weight:bold;}
+
+.EstLinhaBarra, .EstLinhaBarraExt{display:none;}
+.EstEspacoEsquerdaConteudo{width:1px;}
+
+.EstErrField{margin:2px 0px 2px 0px;}
+.EstTxtErrField{color:red;background-color:#f1f1f1;padding:3px;font-size:9px;font-family:Arial,Tahoma,Verdana;}
+.EstChkTxtMsg{color:green;font-size:11px;font-family:Arial,Tahoma,Verdana;}
+.EstChkMsg{background-color:#f1f1f1;padding:3px;}
+
+#SaidaURLComando{background-color:#ffffb2;padding:10px;font-family:Arial,Tahoma,Verdana;font-size:11pt;}
+#SaidaURLComando .EstTextAreaDbgURL{width:500px;height:100px;}
+#SaidaURLComando #idTableDbgFC textarea{width:300px;height:100px;}
