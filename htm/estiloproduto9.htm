@@ -1,0 +1,215 @@
+<!-- Fastcommerce - EstiloProduto9.htm (Fast Preview Modelo) -->
+
+<ProdTop>
+<base target="_parent">
+
+<script>
+function fnCustomizationVexSpy(){
+  var oReferrer=window.parent, oVexContent = oReferrer.document.querySelector('.vex.vex-theme-default .vex-content');
+  if(oVexContent)oVexContent.className +=  " zf-vexspy";
+
+  var oVexContentCloseBefore = oReferrer.document.querySelector('.vex.vex-theme-default .vex-close');
+  if(oVexContentCloseBefore)oVexContentCloseBefore.className +=  " zf-vex-closespy";
+
+  var oVexOverlay = oReferrer.document.querySelector('.vex-overlay');
+  if(oVexOverlay)oVexOverlay.className +=  " zf-vex-overlayspy";
+}
+fnCustomizationVexSpy();
+</script>
+
+<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script src='<PathTo file="htm/lojalib.js">'></script>
+<script src='<PathTo file="htm/lojalibasync.js">'></script>
+<link rel="stylesheet" href='<PathTo file="htm/css/bootstrapmin.css">'>
+<IncludeTagged src="htm/lojasite.css" async>
+<link rel="stylesheet" type="text/css" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1" />
+<script type="text/javascript" src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
+
+<style type="text/css">body{background:#ffffff;}</style>
+
+<!-- init HTML -->
+<div class="container">
+
+</ProdTop>
+
+<ProdLista>
+  <!-- Prod Lista -->
+</ProdLista>
+
+
+<!-- Prod Det -->
+<!-- details -->
+<ProdDet>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="font-primary primary-color breadcrumb-prod-container">
+        <li><a href="/home.asp?idloja=<IDLoja>" class="breadcrumb-prod-link">Início</a></li>
+        <li><PathCat></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row FCGridMain">
+    <!-- picture -->
+    <div class="col-xs-12 col-sm-5 col-md-5">
+      <div class="fc-img-proddet">
+        <div id="idDivGridImg">
+          <a href="<ImagemProdAmp>" class="MagicZoomPlus" rel="hint:false;initialize-on: mouseover;"><img src="<ImagemProdDet>" alt="<NomeProd>" onError="MostraImgOnError(this,0)"></a>
+        </div>
+      </div>
+    </div>
+    <!-- grid-details -->
+    <div class="col-xs-12 col-sm-7 col-md-7">
+      <h1 class="col-xs-12 font-primary primary-color zf-name-proddet" id="nameProductGrid">
+        <NomeProd>
+      </h1>
+      <span class="col-xs-12 zf-cod-proddet" id="idCodProdGrid">Ref: <CodProd></span>
+      <!--<p class="col-xs-12 zf-previous-description" id="previousDescription">
+        <DescricaoCurta>
+      </p>-->
+      <div class="col-xs-12">
+        <hr class="col-xs-12 line-separator-description">
+      </div>
+      <!-- Price -->
+      <div class="col-xs-12">
+        <p class="prod-price" id="idPriceGridFC">
+          <!-- <PrecoSimples> -->
+        </p>
+        <!-- <script>(function(){var e=document.getElementById("idPriceGridFC"); if(e)e.innerHTML += fnMaxInstallmentsGrid(<PrecoNum>,<MaxParcelasProdNum>) + fnShowEconomyGrid(<PrecoNum>,<PrecoOri>); })();</script> -->
+        <script>(function(){
+          var data = {'pn': '<PrecoNum>', 'po': '<PrecoOri>', 'cp': '<codProd>', 'mp': <MaxParcelasProdNum>};var e=document.getElementById("idPriceGridFC");
+          setTimeout(function(){if(e)e.innerHTML = zF$.fnShowPrice(data) }, 1000);
+        })();</script>
+      </div>
+      <!-- grid -->
+      <div class="col-xs-12 FCGrid" id="idMainGridFC_<IDProduto>">
+        <!-- content grid -->
+      </div>
+      <div class="col-xs-12 text-left">
+        <a href="<URLProd>" class="zf-prodspy-seemore">Ver mais detalhes > </a>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- includes -->
+<link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1" />
+
+<script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
+<script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>
+
+<script>FCGrid$.fnMultipleZoom("<ImagemProdDet>","<ImagemProdAmp>", false);</script>
+
+  <script>
+  var aProductOnlyOneGrid=[], aProductListGrid=[];
+
+  /* Begin: produto principal */
+  var sCor= ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+  aProductOnlyOneGrid.push(JSON.stringify({IDProduto: <IDProduto>,codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>", imgPri: "<ImagemProdPri>"}));
+  /* End: produto principal */
+
+  /* Begin: lista subprodutos */
+  <sub>
+  var sCor= ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+  aProductListGrid.push(JSON.stringify({IDProduto: <IDProduto>, codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>", imgPri: "<ImagemProdPri>"}));
+  var productOnlyOneGrid = [];
+  </sub>
+  /* Begin: lista subprodutos */
+
+  /* código opcional para alterar as configurações da grade:begin */
+  FCGrid$.myOptions = {
+    autoSelect : false,
+    shippingUpdate : true,
+    incMultGrid : true,
+    separadorRGBCor : '|',
+    qtyDescriptors : 2,
+    htmlFlagChecked : '<i class="FCCheckedGrid"></i>',
+    imageProduct : 'cor',
+    colorName : false,
+    colorImg : false,
+    colorImgFormat : '.gif',
+    stock: false,
+    btnSelectImg : 'botcarrinho.svg?cccfc=1', /*'botselecionegrid.svg?cccfc=1'*/
+    btnBuyImg : 'botcarrinho.svg?cccfc=1',
+    btnContactUSImg : 'botconsultegrid.svg?cccfc=1',
+    btnSoldOut : 'botcarrinhoesgotado.svg?cccfc=1',
+    textGrid : '',
+    order : ['adicional1', 'cor', 'adicional2', 'adicional3', 'adicionalD1', 'adicionalD2', 'adicionalD3'],
+    nameDescriptor : {
+      cor : 'Cor',
+      adicional1 : 'Tamanho',
+      adicional2 : 'Atributo',
+      adicional3 : 'Marca',
+      adicionalD1 : 'Coleção',
+      adicionalD2 : 'Local',
+      adicionalD3 : 'Obs'
+    },
+    textDescriptor : {
+      cor : 'Escolha a <b>Cor</b>',
+      adicional1 : 'Escolha o <b>Tamanho</b>',
+      adicional2 : 'Selecione',
+      adicional3 : 'Selecione',
+      adicionalD1 : 'Selecione',
+      adicionalD2 : 'Selecione',
+      adicionalD3 : 'Selecione'
+    }
+  };
+  /* código opcional para alterar as configurações da grade:end */
+
+  FCGrid$.init("idMainGridFC_<IDProduto>", aProductListGrid, aProductOnlyOneGrid); /* Inicia a grade */
+
+  </script>
+
+<style>
+.installments {
+  display: inline;
+  line-height: 30px;
+  margin-left: 5px;
+}
+.prices {
+  width: auto;
+  display: inline;
+}
+.prod-price {
+  min-height: 31px;
+}
+.zf-previous-description {
+  font-size: .8em;
+}
+</style>
+
+<!-- End: JS scripts grid -->
+</ProdDet>
+
+<ProdAmp>
+  <!-- Prod Amp -->
+</ProdAmp>
+
+<ProdBottom>
+<!-- end HTML -->
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+<style>
+.zf-name-proddet{margin-bottom: 5px; font-size: 1.35em;}
+.zf-previous-description{margin-top: 5px}
+
+.FCGrid {
+    margin-bottom: 0px;
+}
+.FCStepGrid {
+    min-height: 30px;
+}
+
+.FCBoxGrid.FCResumeProduct {
+    padding: 0 0 !important;
+}
+.FCBoxGrid {
+    min-height: 25px;
+}
+
+.zf-prodspy-seemore{color: #6b6b6b !important; display: block; font-weight: bold; text-decoration: none; text-transform: uppercase; text-align: center; max-width: 190px; margin-left: 0px;}
+</style>
+</ProdBottom>
