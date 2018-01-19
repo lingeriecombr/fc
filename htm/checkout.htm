@@ -1,0 +1,22 @@
+<div class="FCCheckoutLogin"><Login></div>
+<div class="FCCheckoutMain">  
+  <div id="idChkTopFC" class="FCChkOrderConfirmationFloat"><OrderConfirmation></div>  
+  <div id="idChkCol1FC" class="FCRegisterChk">
+    <Register>
+  </div>
+  <div id="idChkCol2FC" class="FCFreightChk">
+    <span id="idChkIniCol2FC"></span>
+    <div id="idChkTagsCol2FC"><OrderCompletion><Freight><Payment></div>
+  </div>
+  <div id="idChkCol3FC" class="FCCartChk"><Cart></div>
+  <div id="idChkBottomFC"></div>
+</div>
+<script>
+function FuncChkRegisterEnd(){
+  if(F$.Step==2){
+    window.onscroll=null;
+    document.getElementById('idChkTagsCol2FC').style.position='relative';
+    document.getElementById('idChkExtCartFC').style.position='relative';
+  }
+}
+</script>
