@@ -1,0 +1,90 @@
+<script type="text/javascript">
+adroll_adv_id = "XN4EGPIFK5CZ7IUO63GZV2";
+adroll_pix_id = "OPEBXZBBRFDJFFKFCB53R5";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+<!-- Facebook Conversion Code for Lingerie Conclusão de Compra -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6021788602122', {'value':'0.00','currency':'BRL'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6021788602122&amp;cd[value]=0.00&amp;cd[currency]=BRL&amp;noscript=1" /></noscript>
+
+<script>
+function require(file){
+var head=document.getElementsByTagName("head")[0];
+var script=document.createElement('script');
+script.id="getSelo";
+script.src=file;
+script.type='text/javascript';
+head.appendChild(script);
+}
+var sBannerEbit="<br><table width=100% align=center class=EstChkDiv><tr height=25><td class=EstChkTabTopo style=text-align:center>Avaliação e-bit</td></tr><tr><td style=text-align:center><a id='bannerEbit'><img src='https://www.ebitempresa.com.br/bitrate/banners/b823.gif'></a></td></tr></table><br>";
+F$.GetID("idChkBottomFC").innerHTML=sBannerEbit;
+require('https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?823');
+</script>
+
+<!-- BEGIN Google Avaliações do Consumidor -->
+<script>
+Date.prototype.addDays = function(days) {
+this.setDate(this.getDate() + parseInt(days));
+return this;
+};
+function fnDateGoogle(){
+var currentDate=new Date();
+currentDate.addDays(30);
+var month=currentDate.getUTCMonth()+1;
+var day=currentDate.getUTCDate();
+var year=currentDate.getUTCFullYear();
+day=day+"";
+month=month+"";
+if(day.length==1)day="0"+day;
+if(month.length==1)month="0"+month;
+var newdateGoogle=year +"-"+ month +"-"+ day;
+return newdateGoogle;
+}
+F$.fnLoadScript('https://apis.google.com/js/platform.js?onload=renderOptIn',true);
+</script>
+<script>
+window.renderOptIn = function() {
+window.gapi.load('surveyoptin', function() {
+window.gapi.surveyoptin.render(
+{
+"merchant_id": 8228998,
+"order_id": "<NumPedido>",
+"email": "<EmailPedido>",
+"delivery_country": "BR",
+"estimated_delivery_date": fnDateGoogle()
+});
+});
+}
+</script>
+<script>
+window.___gcfg = {
+lang: 'pt_BR'
+};
+</script>
+<!-- END Google Avaliações do Consumidor -->
