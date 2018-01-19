@@ -1,0 +1,130 @@
+/* Filtros custom store @lingerie.com.br 2016 */
+#ContentFil {border:none;width:95%;margin-bottom:20px;padding:0;}
+#ContentFil .DivFiltrandoPor {border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+#ContentFil .DivFiltrandoPor .Label{font-weight:normal;font-size:15px;width:100%;display:block;padding:5px 0 5px 5px;color:#666666;}
+#ContentFil .DivFiltrarPor {padding:0px 0px 10px 0px; display: block;}
+#ContentFil .DivFiltrarPor .Label{font-weight:normal;font-size:15px;width:auto;display:block;padding:5px 0 5px 5px;color:#666666;}
+#ContentFil .FilSearch{padding:0 4%;margin:0;list-style-type:none;}
+#ContentFil .FilSearch .FilName{margin:10px 0 5px 0;font-weight:bold;font-size:13px;cursor:pointer;}
+#ContentFil .FilSearch .FilName img{padding:0 4px 0 0;cursor:pointer;width:16px;height:16px;}
+#ContentFil .FilItems .FilItemsList{width:100%;padding:0;margin:0;list-style-type:none;max-height: 145px;overflow-x: auto;overflow-y: auto;border-bottom: 1px solid #ebebeb;}
+#ContentFil .FilItems .FilItemsList::-webkit-scrollbar{-webkit-appearance:none;width:7px;}
+#ContentFil .FilItems .FilItemsList::-webkit-scrollbar-thumb{border-radius:4px;background-color:#666;-webkit-box-shadow:0 0 1px;}
+#ContentFil .FilSearch .SearchFil{margin:3px 0 10px 0;border: 1px solid #cecece;width:100%;height:22px;font-size:12px;padding:0 0 0 5px;}
+#ContentFil #idFilSearchTextInputFC{border: 1px solid #cecece;width:120px;height:22px;font-size:11px;}
+#ContentFil .FilItems .FilItemsList li {line-height:16px;}
+#ContentFil .FilItems .FilItemsList label{font-size:12px;cursor:pointer; color: #4b4b4b; font-weight: normal;}
+#ContentFil .FilItems .FilItemsList li input[type=checkbox] {margin:4px 5px 2px 0;cursor:pointer;}
+#ContentFil .FilItems .FilItemsList li input[type=radio] {margin:4px 5px 2px 0;cursor:pointer;}
+#ContentFil .FilItems .FilItemsList .ColorSearch{color:#64AED9;}
+#ContentFil .SearchTextFil{text-decoration:underline;font-weight:bold;}
+#ContentFil .SearchItem{font-weight:bold;}
+#ContentFil .FilNotFound{font-size:11px;}
+#ContentFil .FiltrandoPor{padding:5px 0 15px 5px;margin:0;list-style-type:none;}
+#ContentFil .FiltrandoPor li{margin-top:10px;font-size:12px;}
+#ContentFil .FiltrandoPor img{width:10px;cursor:pointer;margin-left:3px;}
+#ContentFil .FilRemoveFilters{margin-top:15px;}
+#ContentFil .FilRemoveFilters a{background-color:#dedede;color:#555555;border-radius:3px;font-weight:bold;font-size: 11px;padding: 4px 10px 4px 10px;text-decoration:none;}
+#ContentFil .FilRemoveFilters a:hover{background-color:#990000;color:#fcfcfc;}
+#ContentFil .FilMoreOptionsSearch{margin-top:15px;}
+#ContentFil .FilMoreOptionsSearch a{background-color:#dedede;color:#555555;border-radius:3px;font-weight:bold;font-size: 11px;padding: 4px 10px 4px 10px;text-decoration:none;}
+#ContentFil .FilMoreOptionsSearch a:hover{background-color:#0dc496;color:#fcfcfc;}
+#ContentFil .SetaDireita:before {content: ""; display: inline-block; vertical-align: middle; margin-right: 8px; margin-bottom: 3px; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #0E72D2;}
+#ContentFil .SetaBaixo:before {content: ""; display: inline-block; vertical-align: middle; margin-right: 3px; margin-bottom: 5px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #555555;}
+#ContentFil #idFilSearchTextOriSpanFC a{color: #ff4a4a;}
+#ContentFil .FilInputSearch {padding-bottom: 10px}
+
+.FilItemsList label {
+	display: inline-block;
+	position: relative;
+	padding-left: 25px;
+}
+.FilItemsList input[type=radio],
+.FilItemsList input[type=checkbox] {
+	display: none;
+}
+.FilItemsList label:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	position: absolute;
+	left: 3px;
+	bottom: 1px;
+  background: #ffffff;
+}
+
+.FilItemsList label:before {
+	border-radius: 3px;
+  border: 1px solid #b2b2b2;
+}
+.FilItemsList input[type=checkbox] + label {
+	/*margin-bottom: 10px;*/
+}
+.FilItemsList input[type=radio] + label:before {
+    border-radius: 8px;
+}
+
+.FilItemsList input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 31px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #0dc496;
+    border: none;
+}
+
+.FilItemsList input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #f3f3f3;
+	text-align: center;
+  line-height: 15px;
+  background-color: #0dc496;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  #ContentFil {border-bottom: 1px solid #eeeeee; width: 100%;}
+  #ContentFil .DivFiltrandoPor{border-bottom:1px solid #eeeeee;}
+  #ContentFil .FilSearch .SearchFil{height: 30px; margin: 0;}
+  #ContentFil .FilItems .FilItemsList label {font-weight: normal; font-size: .9em; padding-top: 5px; padding-bottom: 5px; width: 99%}
+  #ContentFil .DivFiltrarPor .Label {display: none; padding-top: 5px; padding-bottom: 5px;}
+  #ContentFil .FilSearch .FilName {font-size: 1em; font-weight: normal}
+  #ContentFil .SetaBaixo:before{margin-right: 8px;}
+  #ContentFil .SetaDireita:before {margin-right: 13px; border-left: 5px solid #0dc496;}
+  #ContentFil .FilItems .FilItemsList{max-height: 140px; background: rgba(235, 235, 235,.4); border-bottom: 1px solid #ebebeb;}
+  #ContentFil .FilItems .FilItemsList label:active {background: rgba(13, 196, 150, .5);}
+
+  #ContentFil #idFilSearchTextInputFC {
+    border: 1px solid #cecece;
+    width: 85%;
+    height: 25px;
+    margin-right: 5px;
+    font-size: 1em;
+  }
+  #ContentFil .FilRemoveFilters a,  #ContentFil .FilMoreOptionsSearch a {
+    padding: 8px 10px;
+    display: inline-block;
+    box-shadow: 0 2px 1px #666;
+    width: 99%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+  #ContentFil .FilRemoveFilters a:active,  #ContentFil .FilMoreOptionsSearch a:active {
+     background-color:#990000;color:#fcfcfc;
+  }
+
+  .FilItemsList label:before {bottom: 5px;}
+
+  #ContentFil .FiltrandoPor img {
+    width: 19px;
+    border: 2px solid #CCD;
+    border-radius: 9px;
+  }
+
+}
