@@ -1,0 +1,428 @@
+<style>
+body {font-size:12px;font-family:Arial,Verdana,Helvetica,Tahoma,sans-serif;color:#666666;background-image: url('https://www.rumo.com.br/lojas/00000159/images/FdSiteFF.jpg');background-repeat:repeat-x;background-position: center top;}
+</style>
+<script type="text/javascript">
+IDLoja='<IDLoja>'; //Obtém IDLoja para montar links
+IDLojaNum='<IDLojaNum>';
+</script>
+<script src="<BaseLoja>htm/jquery.js" type="text/javascript"></script>
+<script src="<BaseLoja>htm/LojaLib.js"></script>
+<script src="<BaseLoja>htm/JurosParcelas.js"></script>
+<script src="<BaseLoja>htm/livequery.js" type="text/javascript"></script>
+<script src="<Baseloja>htm/miniZoomPan.js" type="text/javascript"></script>
+<script src="<BaseLoja>htm/cycle.js" type="text/javascript"></script>
+<script type="text/javascript" src="<BaseLoja>htm/jquery/jquery_nivo_sliderpack.js"></script>
+<script src="<Baseloja>htm/js/jqzoompack101.js" type="text/javascript"></script>
+<script src="<BaseLoja>htm/SpryTabbedPanels.js"></script>
+
+<link rel="stylesheet" href="<BaseLoja>htm/jquery/nivo_slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<BaseLoja>htm/css/style.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="<Baseloja>htm/css/jqzoom.css" type="text/css">
+
+
+
+<script src="<BaseLoja>htm/FC_Grid.js"></script>
+<script>
+FCLib$.LazyLoadWaitImage="/images/shim.gif"; 
+function Start(page) {
+OpenWin = this.open(page, "CtrlWindow", "left=200,top=200,width=750,height=420,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=no");
+}
+
+
+var sPag=document.location.href.toUpperCase();
+
+
+if (sPag.indexOf("LOGOFF=TRUE")>=0) {
+
+document.write('<meta http-equiv="refresh" content="0; URL=HOME.asp?IDLoja=159">');
+
+}
+</script>
+
+
+
+
+<style type="text/css">
+
+<!--
+.BarPromAmarela {color: #FF0;font-family: Arial, Helvetica, sans-serif;font-size: 14px;}
+.BarPromBranca {color: #FFF;Font-family: Arial, Helvetica, sans-serif;font-size: 14px;text-decoration:none;}
+.BarPromBranca:visited {color:#FFF;}
+.BarPromBranca:active {color:#FFF;}
+.BarPromBranca:hover {color:#FFF;text-decoration:none;}
+.style1 {
+	font-size: 20px;
+	color: #333333;
+}
+.style3 {font-size: 20px; color: #F36F9F; }
+.style7 {color: #000000; font-weight: bold; }
+-->
+
+</style>
+<script language=JavaScript src="<BaseLoja>htm/SimulaFreteFC.js"></script>
+<table width="990" border="0" cellspacing="0" cellpadding="0" background="<Baseloja>images/FdTopo.jpg">
+  <tr>
+    <td width="5" height="85">&nbsp;</td>
+    <td width="280" height="85" align="center"><a href="Home.asp?IDLoja=<IDLoja>"><img alt="Lingerie.com.br - Home"  src="<Baseloja>images/TopoLogo.gif" title="Lingerie.com.br - Home" width="254" height="51" border="0"></a></td>
+    <td width="340" height="85" align="center">
+    
+    
+    
+    
+    </td>
+    <td width="360" height="85"><table width="360" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="40" align="right"><img width="360" height="40" src="<Baseloja>images/Online.png" border="0" usemap="#ON"></td>
+      </tr>
+      <tr>
+        <td height="43"><img width="360" height="45" src="<Baseloja>images/MenCar.jpg" border="0" usemap="#MC"></td>
+      </tr>
+    </table></td>
+    <td width="5" height="85">&nbsp;</td>
+  </tr>
+</table>
+<table width="990" border="0" cellspacing="0" cellpadding="0" background="<Baseloja>images/FdMenHor.jpg">
+  <tr>
+    <td width="5">&nbsp;</td>
+    <td width="250" height="35" background="<Baseloja>images/FdMenHor.jpg"><a href="home.asp?IDLoja=<IDLoja>"><img alt="Home" src="<Baseloja>images/BtHome.png" title="Home" width="55" height="20" border="0" style="position:relative;margin-left:35px;margin-top:5px;"></a>
+      <a href="Cadastro.asp?IDLoja=<IDLoja>"><img alt="Cadastro" src="<Baseloja>images/BtCadastro.png" title="Cadastro" width="76" height="20" border="0" style="position:relative;margin-left:5px;margin-top:5px;"></a>
+<!--<script>
+    
+	if(''!='<NomeCliente>'){
+	
+		document.write('<a href="/Cadastro.asp?logoff=true&IDLoja=159"><img src="../lojas/00000159/images/BtLogoff.png" alt=Sair title=Sair border="0" style="position:relative;margin-left:5px;margin-top:5px;" /></a>');
+
+	} else {
+
+		document.write('<a href="Cadastro.asp?IDLoja=159"><img src="../lojas/00000159/images/BtLogin.png" alt=Login title=Login border="0" style="position:relative;margin-left:5px;margin-top:5px;" /></a>');
+
+	}
+
+</script>-->
+    </td>
+    <td width="370" back><script language="JavaScript">
+
+today = new Date(); 
+hora = today.getHours();
+
+if ((hora >=6) && (hora < 12)) 
+document.write("<span class=Branco>Bom dia! </span>") 
+else 
+if ((hora >=12) && (hora < 18)) 
+document.write("<span class=Branco>Boa tarde! </span>") 
+else 
+if ((hora >=18) && (hora < 24)) 
+document.write("<span class=Branco>Boa noite! </span>") 
+else 
+if ((hora >=00) && (hora < 6)) 
+document.write("<span class=Branco>Bom dia! </span>") 
+
+var sPag=document.location.href.toUpperCase();
+
+
+if(''!='<NomeCliente>') {
+	
+document.write('<span class=Branco><NomeCliente>.</span> <a class=Branco href="/Cadastro.asp?logoff=true&logoff=true&logoff=true&IDLoja=159"><u>SAIR</u></a>');
+
+} else {
+
+document.write('<a class=Branco href=Cadastro.asp?IDLoja=159>Identifique-se ou cadastre-se <u>aqui</u></a>');
+
+}
+
+</script></td>
+    <td width="360" back><img width="360" height="35" src="<Baseloja>images/MenHor2.jpg" border="0" usemap="#MapMH2"></td>
+    <td width="5">&nbsp;</td>
+  </tr>
+</table>
+<map name="ON">
+  <area shape="rect" coords="279,1,358,25" href="FaleConosco.asp?IDLoja=<IDloja>" alt="e-mail lingerie.com.br" title="e-mail lingerie.com.br">
+  <area shape="rect" coords="1,1,59,24" href="/page,IDLoja,159,arq,Empresa.htm,Empresa" alt="Lingerie.com.br - Empresa" title="Lingerie.com.br - Empresa">
+</map>
+<map name="MC">
+<area shape="rect" coords="220,2,348,45" href="Track.asp?IDLoja=<IDLoja>" alt="Rastrear Pedido" title="Rastrear Pedido">
+<area shape="rect" coords="92,2,220,45" href="AddProduto.asp?IDLoja=<IDLoja>" alt="Meu Pedido" title="Meu Pedido">
+</map>
+
+<table width="990" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img width="1" height="2" src="<Baseloja>images/Trans.gif" /></td>
+  </tr>
+</table>
+<div class="HotSiteRetira">
+<table width="990" border="0" cellspacing="0" cellpadding="0" style="background:transparent">
+  <tr>
+    <td><a href="/prod,IDLoja,159,Texto,LUPO,Lupo"><img alt="Lupo" src="<Baseloja>images/McLupo.gif" title="Lupo" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,DelRio,DelRio"><img alt="Hope" src="<Baseloja>images/McDelRio.gif" title="Hope" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,TRIFIL,Trifil"><img title="Trifil" src="<Baseloja>images/McTrifil.gif" alt="Trifil" width="88" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,DeMillus,DeMillus"><img alt="De Millus" src="<Baseloja>images/McDeMillus.gif" title="De Millus" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,DULOREN,Duloren"><img alt="Duloren" src="<Baseloja>images/McDuLoren.gif" title="Duloren" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Avancada,1,Adicional3,63039,Morisco"><img alt="Morisco" src="<Baseloja>images/McMorisco.gif" title="Morisco" width="88" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Avancada,1,Adicional3,33,Hope"><img alt="Hope" src="<Baseloja>images/McHope.gif" title="Hope" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Avancada,1,Adicional3,39,Liz"><img alt="Liz" src="<Baseloja>images/McLiz.gif" title="Liz" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,PLIE,Plie"><img alt="Pli&eacute;" src="<Baseloja>images/McPlie.gif" title="Pli&eacute;" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,DILADY,Dilady"><img alt="Dilady" src="<Baseloja>images/McDiLady.gif" title="Dilady" width="86" height="29" border="0" /></a></td>
+    <td><img width="4" height="1" src="<Baseloja>images/Trans.gif" /></td>
+    <td><a href="/prod,IDLoja,159,Texto,LIEBE,Liebe"><img title="Liebe" src="<Baseloja>images/McLiebe.gif" alt="Liebe" width="86" height="29" border="0" /></a></td>
+  </tr>
+</table>
+</div>
+
+<table width="990" border="0" cellspacing="0" cellpadding="0" background="<Baseloja>images/FdBusca.jpg">
+  <tr>
+    <td width="280" height="40" align="center">
+      <div class="Hotsite">
+        <select name="select" size="1" class="InputSelect" style="position:relative;top:0;font-size:12px;width:150px;height:20px;" onchange='location = options[selectedIndex].value'>
+          <option value="" selected>Selecione a marca...</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,68392,2Rios">2Rios</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,66334,Actionwear">Actionwear</option>         
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,66400,Adherent">Adherent</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,36170,Agua-Doce-Maios-Biquinis Amor">Água Doce maiôs/biquinis</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,59406,Água-Maiôs">Águia Maiôs</option>
+          <option value="/prod,IDLoja,159,Texto,ANA HICKMANN,Ana-Hickmann-Marcyn">Ana Hickmann Marcyn</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,68857,Arsié">Arsié</option>
+          <option value="/prod,IDLoja,159,Texto,ASPA NYLONS,Aspa-cosmeticos">Aspa cosméticos</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69779,Bad-Boy">Bad Boy</option> 
+          <option value="/prod,IDLoja,159,Texto,BEAUTIFUL WOMAN,Beautiful-Woman">Beautiful Woman</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,68742,Bela-Notte">Bela Notte</option>
+          <option value="/prod,IDLoja,159,Texto,BEJ,Bejoa">Bejoá</option>
+          <option value="/prod,IDLoja,159,Texto,BIJOUX DE PELE,Bijoux-de-Pele">Bijoux de Pele</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,64450,Brupi">Brupi</option>
+          <option value="/prod,IDLoja,159,Texto,CALVIN KLEIN,Calvin-Klein">Calvin Klein</option>
+          <option value="/prod,IDLoja,159,Texto,CAPRICHO,Capricho">Capricho</option>
+          <option value="/prod,IDLoja,159,Texto,CATALINA,Catalina-maios">Catalina maiôs</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69781,Cavalera">Cavalera</option> 
+          <option value="/prod,IDLoja,159,Texto,CERVIN,Cervin-Paris">Cervin Paris</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27303,Cinta-Moderna">Cinta Moderna</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,58025,Chinelar">Chinelar chinelos</option>
+          <option value="/prod,IDLoja,159,Texto,CRD,Ch&D">Ch&D</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,37636,Classic-Maios-Biquinis Amor">Classic maiôs/biquinis</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69776,Colcci">Colcci</option> 
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52262,Cor com Amor">Cor com Amor</option>
+          <option value="/prod,IDLoja,159,Texto,CORPELLE,Corpelle">Corpelle</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27323,C-string">C-string</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27276,DAI">DAI</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,65798,Dama-de-Seda">Dama de Seda</option>
+          <option value="/prod,IDLoja,159,Texto,DANIELA DNL,Daniela-Meias">Daniela Meias</option>
+          <option value="/prod,IDLoja,159,Texto,DANIELA TOMBINI,Daniela-Tombini">Daniela Tombini</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,19,Darling">Darling</option>
+          <option value="/prod,IDLoja,159,Texto,DE CHELLES,De-Chelles">De Chelles</option>
+          <option value="/prod,IDLoja,159,Texto,DECOTE BRA DBR,Decote-BRA">Decote BRA</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,50219,Dedeka">Dedeka</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27306,DelRio">DelRio</option>
+          <option value="/prod,IDLoja,159,Texto,DEMILLUS,DeMillus">DeMillus</option>
+          <option value="/prod,IDLoja,159,Texto,DILADY,Dilady">Dilady</option>
+          <option value="/prod,IDLoja,159,Texto,DIV Tamanco,DIV-tamancos">DIV tamancos</option>
+          <option value="/prod,IDLoja,159,Texto,DKNY,DKNY-Donna-Karan-New-York">DKNY - Donna Karan New York</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27271,DLI-lingerie">DLI lingerie</option>
+          <option value="/prod,IDLoja,159,Texto,DNF MICROBIQUINI,DNF-microbiquinis">DNF microbiquinis</option>
+          <option value="/prod,IDLoja,159,Texto,DREAMGIRL,Dreamgirl">Dreamgirl</option>
+          <option value="/prod,IDLoja,159,Texto,DRESSY,Dressy">Dressy</option>
+          <option value="/prod,IDLoja,159,Texto,DULOREN,Duloren">Duloren</option>
+          <option value="/prod,IDLoja,159,Texto,DUVELLY,Duvelly">Duvelly</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,56914,E-Pijama">E-Pijama</option>
+          <option value="/prod,IDLoja,159,Texto,ELEGANCE ELG,Elegance">Elegance</option>
+          <option value="/prod,IDLoja,159,Texto,ELITIZE,Elitize-meias-tatuadas">Elitize meias tatuadas</option>
+          <option value="/prod,IDLoja,159,Texto,ELLAN,Ellan">Ellan</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,62226,Emocione">Emocione</option>
+          <option value="/prod,IDLoja,159,Texto,ESBELT,Esbelt">Esbelt</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69782,Everlast">Everlast</option> 
+          <option value="/prod,IDLoja,159,Texto,FIDELITA,Fidelitá">Fidelitá</option>
+          <option value="/prod,IDLoja,159,Texto,FITS WELL,Fits-Well-pijamas">Fits Well pijamas</option>
+          <option value="/prod,IDLoja,159,Texto,FOFATEX,Fofatex">Fofatex</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27332,FOR-clubwear">FOR clubwear</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,46570,Forum">Forum</option> 
+          <option value="/prod,IDLoja,159,Texto,GAROTA VENENO,Garota-Veneno">Garota Veneno</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,61640,Gold-Nylons">Gold Nylons</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,57778,Gruppo Intimo">Gruppo Intimo</option>
+          <option value="/prod,IDLoja,159,Texto,HANES,Hanes">Hanes</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69780,Hang-Loose">Hang Loose</option> 
+          <option value="/prod,IDLoja,159,Texto,Hello Kitty,Hello Kitty">Hello Kitty</option>
+          <option value="/prod,IDLoja,159,Texto,HOPE,Hope">Hope</option>
+          <option value="/prod,IDLoja,159,Texto,CORSET ILV,ILV-corsets">ILV corsets</option>
+          <option value="/prod,IDLoja,159,Texto,INDECENSE,Indecense">Indecense</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,54146,Instinto-Feminino">Instinto Feminino</option>
+          <option value="/prod,IDLoja,159,Texto,Jiggy,Jiggy">Jiggy Meias</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,68784,Jog-Underwear">Jog Underwear</option>
+          <option value="/prod,IDLoja,159,Texto,JUSSARA,Jussara-Underwear">Jussara Underwear</option>
+          <option value="/prod,IDLoja,159,Texto,JUY,JUY-utilidades">JUY utilidades</option>
+          <option value="/prod,IDLoja,159,Texto,KANTO DOS SONHOS,Kanto-dos-Sonhos-pijamas">Kanto dos Sonhos pijamas</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,1014,Kendall-meias">Kendall meias</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,57704,Koketa">Koketa</option>
+          <option value="/prod,IDLoja,159,Texto,KSELL,Ksell-plus-size">Ksell plus size</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,61634,Laibel">Laibel Pijamas</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,58086,Leann-Disfarce">Leann-Disfarce</option>
+          <option value="/prod,IDLoja,159,Texto,LE PINK,Le-Pink">Le Pink</option>
+          <option value="/prod,IDLoja,159,Texto,LEG AVENUE,Leg-Avenue">Leg Avenue</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,58602,Lenços Presidente">Lenços Presidente</option>
+          <option value="/prod,IDLoja,159,Texto,LIEBE,Liebe">Liebe</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,63082,Lilás Plus Size">Lilás Plus Size</option>
+          <option value="/prod,IDLoja,159,Texto,LION,Lion-malhas">Lion malhas</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,39,LIZ">Liz</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52266, Loa Meias">Loa Meias</option>
+          <option value="/prod,IDLoja,159,Texto,LOLYPOP,Lolypop-meias">Lolypop meias</option>
+          <option value="/prod,IDLoja,159,Texto,LOVE SECRET,Love-Secret">Love Secret</option>
+          <option value="/prod,IDLoja,159,Texto,LUA MORENA,Lua-Morena-biquinis">Lua Morena biquinis</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,54897,Lua Luá Pijamas">Lua Luá Pijamas</option>
+          <option value="/prod,IDLoja,159,Texto,LUCITEX,Lucitex">Lucitex</option>
+          <option value="/prod,IDLoja,159,Texto,LUPO,Lupo">Lupo</option>
+          <option value="/prod,IDLoja,159,Texto,MALHAFIL,Malhafil">Malhafil</option>
+          <option value="/prod,IDLoja,159,Texto,MALWEE,Malwee">Malwee</option>
+          <option value="/prod,IDLoja,159,Texto,MARCYN,Marcyn">Marcyn</option>
+          <option value="/prod,IDLoja,159,Texto,MARÉ BRASIL,Mare-Brasil">Maré Brasil</option>
+          <option value="/prod,IDLoja,159,Texto,MRM,Mari-M">Mari M.</option>
+          <option value="/prod,IDLoja,159,Texto,MASH,Mash">Mash</option>
+          <option value="/prod,IDLoja,159,Texto,MEIOSE,Meiose-meias">Meiose meias</option>
+          <option value="/prod,IDLoja,159,Texto,MGM porta sutiã,MGM-porta-sutias">MGM porta sutiãs</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,66037,Mihy">Mihy</option>
+          <option value="/prod,IDLoja,159,Texto,MIXTE,Mixte">Mixte</option>
+          <option value="/prod,IDLoja,159,Texto,MIZ COUTURE,Miz-Couture">Miz Couture</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,58796,Mondress">Mon' dress</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,63039,Morisco">Morisco</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,669783,Mormaii">Mormaii</option> 
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,65983,Mundo-do-Sono">Mundo do Sono</option>
+          <option value="/prod,IDLoja,159,Texto,MYL MYLADY,My-Lady">My Lady</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52362,Ness Plus Size">Ness Plus Size</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,1097,Obsessao-fantasias-sensual">Obsessão fantasias/sensual</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,65815,Onfit">Onfit</option>
+          <option value="/prod,IDLoja,159,Texto,PAMELA MANN,Pamela-Mann-meias">Pamela Mann meias</option>
+          <option value="/prod,IDLoja,159,Texto,PAULIENNE,Paulienne">Paulienne</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,54987, Phael">Phael</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,63505,Pimenta-Sexy">Pimenta Sexy</option>
+          <option value="/prod,IDLoja,159,Texto,PLIE,Plie">Pliè</option>
+          <option value="/prod,IDLoja,159,Texto,PODIUN,Podiun-pijamas">Podiun pijamas</option>
+          <option value="/prod,IDLoja,159,Texto,PUFF,Puff-chinelos">Puff chinelos</option>
+          <option value="/prod,IDLoja,159,Texto,PUKET,Puket">Puket</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69777,Puma">Puma</option> 
+          <option value="/prod,IDLoja,159,Texto,PZAMA,Pzama-pijamas">Pzama pijamas</option>
+          <option value="/prod,IDLoja,159,Texto,QUESTION,Question-cuecas">Question cuecas</option>
+          <option value="/prod,IDLoja,159,Texto,RANNY,Rannys">Ranny´s</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69744,Rafa-Gatha">Rafa Gatha</option>
+          <option value="/prod,IDLoja,159,Texto,Recco,Recco">Recco</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69785,Red-Nose">Red Nose</option> 
+          <option value="/prod,IDLoja,159,Texto,RICSEN,Ricsen">Ricsen</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52644,RM-Helancal">RM-Helanca</option>
+          <option value="/prod,IDLoja,159,Texto,ROSEMARI,Rosemari-pijamas">Rosemari pijamas</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69778,Rusty">Rusty</option> 
+          <option value="/prod,IDLoja,159,Texto,SAPEKA,Sapeka-fantasias-sensual">Sapeka fantasias/sensual</option>
+          <option value="/prod,IDLoja,159,Texto,SCALA,Scala">Scala</option>
+          <option value="/prod,IDLoja,159,Texto,SENSUALLE,Sensualle">Sensualle</option>
+          <option value="/prod,IDLoja,159,Texto,SEVEN TIL MIDNIGHT,Seven-til-Midnight">Seven´til Midnight</option>
+          <option value="/prod,IDLoja,159,Texto,SHAFA,Shafa-petalas">Shafa pétalas</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,34723, Signorelli-plus-size">Signorelli plus size</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,57946,Sigvaris">Sigvaris</option>
+          <option value="/prod,IDLoja,159,Texto,SIZELY,Sizely">Sizely</option>
+          <option value="/prod,IDLoja,159,Texto,SLOGGI,Sloggi">Sloggi</option>
+          <option value="/prod,IDLoja,159,Texto,SOLIDEA,Solidea">Solidea</option>
+          <option value="/prod,IDLoja,159,Texto,SMT DESCARTÁVEL,Sometimes-descartaveis">Sometimes descartáveis</option>
+          <option value="/prod,IDLoja,159,Texto,SONHART,Sonhart">Sonhart</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69546,Spk-All-Fit">Spk-All-Fit</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52270,Sulfabril">Sulfabril</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69784,Tng">Tng</option> 
+          <option value="/prod,IDLoja,159,Texto,TRIFIL,Trifil">Trifil</option>
+          <option value="/prod,IDLoja,159,Texto,TRIUMPH,Triumph">Triumph</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,27281,Un-I-Universo-Intimo">Un.I - Universo-Intimo</option>
+          <option value="/prod,IDLoja,159,Texto,UNDERFORMS,Underforms">Underforms</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,59448,Único-Maiôs">Único Maiôs</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,52107,Upman">Upman</option>
+          <option value="/prod,IDLoja,159,Texto,VAIRELLI,Vairelli">Vairelli</option>
+          <option value="/prod,IDLoja,159,Texto,VALFRANCE,Valfrance">Valfrance</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,60,Valisere">Valisere</option>
+          <option value="/prod,IDLoja,159,Texto,VLG Vi Lingerie,Vi-lingerie">Vi lingerie</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,65318,Vincullus">Vincullus</option>
+          <option value="/prod,IDLoja,159,Texto,YASMIN,Yasmin">Yasmin</option>
+          <option value="/prod,IDLoja,159,Avancada,1,Adicional3,69553,Zee-Rucci">Zee-Rucci</option>
+          <option value="/prod,IDLoja,159,Texto,ZORBA ZRB,Zorba">Zorba</option>
+        </select>
+      </div></td>
+    <td width="540" height="40"><table width="540" border="0" cellspacing="0" cellpadding="0">
+      <script>
+	function VerTexto(oNome){
+	if (oNome.texto.value=='busca por palavra-chave' || oNome.texto.value==''){
+	alert('Digite o que deseja pesquisar');
+	oNome.texto.focus();return false;}else{return true;
+	}
+	}
+</script>
+<form method=get action=ListaProdutos.asp name=fBusca onSubmit="return VerTexto(this);">
+<input type=hidden name=IDLoja value=159>
+<input type=hidden name=Digitada value=True>
+<input type=hidden name=Y value="<Y>"><tr>
+<td width="456"><input class="InputBusca" type="text" name="texto" size="52" maxlength="60" value="busca por palavra-chave" onClick="this.value=''" style="width:440px" /></td>
+<td width="84"><input type="image" name="Ok" src="<Baseloja>images/Trans.gif" width="70" height="21" border="0" /></td>
+      </tr>
+</form>
+    </table></td>
+    <td width="170" height="40"><a class="Cinza" href="BuscaAvancada.asp?IDLoja=<IDLoja>" title="Busca Avan&ccedil;ada">Busca avan&ccedil;ada</a></td>
+  </tr>
+</table>
+
+<table width="990" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="494" height="26" align="center" bgcolor="#00000"><!--<span class="BarPromAmarela">FRETE GR&Aacute;TIS</span> <span class="BarPromBranca">PARA PEDIDOS ACIMA DE R$ 120,00 PARA SP,MG,PR,RJ,SC, DEMAIS REGI&Otilde;ES. CONSULTE O <a class="BarPromBranca" href="javascript:Start('http://www.rumo.com.br/lojas/00000159/htm/Regulamento.htm')" title="CONSULTE O REGULAMENTO"><u>REGULAMENTO</u></a></span>--><span class="BarPromBranca"><strong>BLACK FRIDAY O M&Ecirc;S INTEIRO!</strong></span></td>
+    <td width="496" align="center" bgcolor="#00000"><strong><span class="BarPromAmarela">AT&Eacute;     70% DE DESCONTO! </span></strong></td>
+  </tr>
+</table>
+
+
+<script language="JavaScript">
+var sPag=document.location.href.toUpperCase();
+
+if(FC$.Page=="Home")
+{
+document.write("<style>#Banners_Home{display: block;} </style>");
+}
+
+else
+{
+document.write("<style>#Banners_Home{display:none;} </style>");
+}
+</script>
+
+
+<div id="Banners_Home" style="text-align:center; width:990px; padding-top:1px;">
+<div id="wrapper">
+<div id="slider-wrapper">
+<div id="slider" class="nivoSlider"><banner 1><banner 2><banner 3><banner 4><banner 5><banner 6><banner 7><banner 8><banner 9><banner 10></div>     
+</div>
+</div>
+
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+</div>
+
+<map name="MapMH2">
+<area shape="rect" coords="277,6,340,28" href="Ajuda.asp?IDLoja=<IDLoja>" alt="Ajuda" title="Ajuda">
+</map>
+<table width="990" height="76" border="0">
+  <tr>
+    <td width="198"><div align="center"><span class="style3"><span class="style7">10% a 30%</span><br />
+    <a href="/prod,IDLoja,159,Texto,BlackFriday2016_1030,BlackFriday"><img src="<Baseloja>images/BOT.gif" width="137" height="33" /></a></span></div></td>
+    <td width="198" class="style1"><div align="center" class="style7">30% a 50%<br />
+        <span class="style3"><a href="/prod,IDLoja,159,Texto,BlackFriday2016_3050,BlackFriday"><img src="<Baseloja>images/BOT.gif" width="137" height="33" /></a></span><br />
+    </div></td>
+    <td width="198" class="style1"><div align="center" class="style7">+ De 50%<br />
+        <span class="style3"><a href="/prod,IDLoja,159,Texto,BlackFriday2016_5070,BlackFriday"><img src="<Baseloja>images/BOT.gif" width="137" height="33" /></a></span><br />
+    </div></td>
+    <td width="198" class="style1"><div align="center" class="style7">Liz com 20%<br />
+        <span class="style3"><a href="/prod,idloja,159,texto,BlackFriday2016,produtos,20,order,1,avancada,1,adicional3,39"><img src="<Baseloja>images/BOT.gif" width="137" height="33" /></a></span><br />
+    </div></td>
+    <td width="198" class="style1"><div align="center" class="style7">Pli&eacute; com 20%<br />
+        <span class="style3"><a href="/prod,idloja,159,texto,BlackFriday2016,produtos,20,order,1,avancada,1,adicional3,405"><img src="<Baseloja>images/BOT.gif" width="137" height="33" /></a></span><br />
+</div></td>
+  </tr>
+</table>
