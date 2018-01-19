@@ -1,0 +1,57 @@
+<script type="text/javascript" src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script type="text/javascript" src='<PathTo file="htm/lojalib.js">'></script>
+<script type="text/javascript" src='<PathTo file="htm/js/owlcarouselmin.js">'></script>
+<link rel="stylesheet" href='<PathTo file="htm/css/bootstrapmin.css">'>
+<link rel="stylesheet" href='<PathTo file="htm/css/owlcarousel.css">'>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="zf-header-infomenu">
+          <ul>
+            <li><a href="/home.asp?idloja=<IDLoja>">Home</a></li>
+            <li><a href="/page,idloja,<idloja>,arq,quemsomos.html">Quem Somos</a></li>
+            <li><a href="/account.asp?idloja=<IDLoja>&register=1#Register">Minha Conta</a></li>
+            <li><a href="/account.asp?idloja=<IDLoja>&orders=1#Orders">Rastrear Pedido</a></li>
+            <li><a href="/ajuda.asp?idloja=<IDLoja>">Ajuda</a></li>
+            <li><a href="/page,idloja,<IDLoja>,arq,contato.html">Atendimento</a></li>
+            <li style="text-align:right"><a href="/page,idloja,<IDLoja>,arq,contato.html"><img src='<PathTo file="images/Fone.svg">' title="Telefone"> (11) 3862-3205 <img src='<PathTo file="images/whats.svg">' title="Whatsapp"> (11) 95845-7863</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="zf-toolbar-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 zf-header-logo">
+          <a href="<StoreDomain>">
+            <img class="" alt="<NomeLoja>" title="<NomeLoja>" src='<PathTo file="images/logotopo.svg">'>
+          </a>
+        </div>
+        <div class="col-xs-8 col-sm-3 col-md-3 col-lg-2 zf-header-login">
+          <span>Olá, <a href="#">clique aqui</a> e faça o login.</span>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4 zf-search-top-container">
+          <form id="autocomplete-form" class="zFHeaderFormSeach" method="GET" action="/listaProdutos.asp">
+            <input type="hidden" name="IDLoja" value="<IDLoja>">
+            <input type="hidden" name="Digitada" value="True">
+            <input id="autocomplete" type="text" value="<SearchText>" name="Texto" placeholder="Busque produtos...">
+            <button  class="zf-btn-topsearch">
+              <img64 src='<PathTo file="images/icosearch.svg">' plain="true" width="25" height="25" alt="Buscar" title="Buscar">
+            </button>
+          </form>
+        </div>
+        <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 pull-right zf-carttop-container">
+          <div class="col-xs-7 col-md-9 col-sm-12 col-lg-9 font-primary">
+            <h5 class="primary-color hidden-xs">Minha sacola:</h5>
+            <span id="headerCartLabel" class="zf-header-cart-label"><QtdCesta> itens | R$ <ValorCesta></span>
+          </div>
+          <div class="col-xs-5 col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-sm header-cart-ico">
+            <img64 src="<BaseLoja>images/icocarttop.svg" plain="true" alt="cesta de compras" title="Ir para o carrinho de cesta">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
