@@ -1,0 +1,304 @@
+<!--
+@EstiloProduto.htm - zFast 2016 | lingerie.com.br
+-->
+
+<!-- header -->
+<ProdTop>
+  <div class="row zf-header-prodtop">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 zf-breadcrumb-List">
+      <ul class="breadcrumb-prod-container">
+        <li><span><a href="/home.asp?idloja=<IDLoja>" class="breadcrumb-prod-link1">Início</a></span></li>
+        <li><PathCat></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4  zf-breadcrumb-qtd">
+      (<QtProd>) Produtos <span class="hidden-xs hidden-sm hidden-md">encontrados</span>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 zf-select-orderprodlist" id="idSelectOrderZF"></div>
+  </div>
+
+  <!-- Search Filters : begin -->
+  <div id="idFiltersFC" style="display:none;">
+    <div id="idListaProdAdicional1FC">
+      <div class="EstTitQts"><NomeAdicional1></div>
+      <ListAdic1Qt>
+    </div>
+    <div id="idListaProdAdicional2FC">
+      <div class="EstTitQts"><NomeAdicional2></div>
+      <ListAdic2Qt>
+    </div>
+    <div id="idListaProdAdicional3FC">
+      <div class="EstTitQts"><NomeAdicional3></div>
+      <ListAdic3Qt>
+    </div>
+  </div>
+  <!-- Search Filters : end -->
+
+<JurosParcelas>
+<script src="<PathTo file="htm/js/fc_grid_list_v1.js">"></script><!-- include grid for prod list -->
+
+<script>
+  function firstPriceList (aPrdsSubsPrice, aPrdsPaiPrice, cod, mp, id, priceMin, priceMax, issub){
+    if(aPrdsSubsPrice.length > 0 && aPrdsPaiPrice.length > 0){
+      if( parseFloat(aPrdsSubsPrice[aPrdsSubsPrice.length-1][0]) !== parseFloat(aPrdsPaiPrice[0][0]) ||
+          parseFloat(aPrdsSubsPrice[0][0]) !== parseFloat(aPrdsPaiPrice[0][0]) )
+      {
+        var issub = (typeof issub !== "undefined") ? issub : "false";
+        var domHTML = document.getElementById(id);
+        if(domHTML)domHTML.setAttribute('data-prod-price', 'pn:'+ aPrdsSubsPrice[0][0] +'; po:'+ aPrdsSubsPrice[0][1] +'; cp: '+cod+'; mp:'+mp+';issub:'+ issub +';'+'pricemin:'+priceMin+';pricemax:'+priceMax);
+      }
+    }
+  }
+</script>
+
+</ProdTop>
+
+
+<!-- list -->
+<ProdLista>
+  <div class="zf-prodout-container">
+    <div class="zf-prodout-content">
+      <span data-prod-discount="pn: <PrecoNum>; po: <PrecoOri>;"></span>
+      <div class="zf-prodout-img">        
+        <ImagemProd>
+        <div class="zf-prodout-details">
+          <a class="zf-prodout-spy" href="#Spy" onclick="FCLib$.OpenRWD('/listaprodutos.asp?idloja=159&sty=9&int=1&idproduto=<IDProduto>','Disp','width=780,height=600')">
+          Espiar
+          </a>
+        </div>
+      </div>
+
+      <div class="zf-grid-list-main" id="listGrid_<IDProduto>"></div>
+
+      <div class="zf-prodout-name">
+        <a class="zf-prodout-linkname" data-prod-name href="<URLProd>"><NomeProd></a>
+      </div>
+      
+      <div class="zf-prodout-prices text-left" id="price_list_<IDProduto>" data-prod-price="pn:<PrecoNum>; po:<PrecoOri>; cp: <CodProd>; mp:<MaxParcelasProdNum>"></div>
+    </div>
+  </div>
+
+<script>
+/*set list product*/
+var prds_grid_lin = [];
+var prds_price = [];
+prds_price.push(["<PrecoNum>","<PrecoOri>"]);
+<Sub>
+prds_price.push(["<PrecoNum>","<PrecoOri>"]);
+(function(){var clr = (("<CorVal>" != "") ? "<CorVal>|<CorRGB>" : "").toString(); prds_grid_lin.push({"id": "<IDProduto>", "cp": "<CodProd>", "cl": clr, "st": "<Estoque>", "wg": "<PesoNum>", "po": "<PrecoOri>", "pn": "<PrecoNum>", "mi": "<MaxParcelasProdNum>", "ad1": "<Adicional1Val>", "ad2": "<Adicional2Val>", "ad3": "<Adicional3Val>", "add1": "<AdicionalD1Val>", "add2":"<AdicionalD2Val>", "add3":"<AdicionalD3Val>", "imgp":"<ImagemProdPri>", "imgd":"<ImagemProdDet>", "imga":"<ImagemProdAmp>"});})();
+</Sub>
+</script>
+
+<script>
+(function(){
+  if(prds_grid_lin && typeof prds_grid_lin[prds_grid_lin.length-1] !== 'undefined'){zF_Grid_List.init('<IDProduto>', prds_grid_lin);}
+  if(typeof firstPriceList === "function"){
+
+    function sortfunction(a, b){
+      return (a[0] - b[0]) //faz com que o array seja ordenado numericamente e de ordem crescente.
+    }
+    var prodprice = prds_price.sort(sortfunction);
+    var priceMin =  "0", priceMax = "0";
+    if(parseFloat(prodprice[0][0]) !== parseFloat(prodprice[prodprice.length-1][0])){
+      priceMin = prodprice[0][0];
+      priceMax = prodprice[prodprice.length-1][0]
+    }
+    firstPriceList(prodprice, [["<PrecoNum>","<PrecoOri>"]], "codProd", "<MaxParcelasProdNum>", "price_list_<IDProduto>", priceMin, priceMax, "true");
+  }
+})();
+</script>
+
+</ProdLista>
+
+
+<!-- details -->
+<ProdDet>
+  <div class="row">
+    <div class="col-xs-12 zf-proddet-banner font-primary">
+      Parcele em até <strong>3x sem juros</strong> no cartão de crédito
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="font-primary primary-color breadcrumb-prod-container">
+        <li><a href="/home.asp?idloja=<IDLoja>" class="breadcrumb-prod-link">Início</a></li>
+        <li><PathCat></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row FCGridMain">
+    <!-- picture -->
+    <div class="col-xs-12 col-sm-6 col-md-5">
+      <div class="fc-img-proddet">
+        <div id="idDivGridImg">
+          <a href="<ImagemProdAmp>" class="MagicZoomPlus" rel="hint:false;initialize-on: mouseover;"><img src="<ImagemProdDet>" alt="<NomeProd>" onError="MostraImgOnError(this,0)"></a>
+        </div>
+      </div>
+    </div>
+    <!-- grid-details -->
+    <div class="col-xs-12 col-sm-6 col-md-7">
+      <h1 class="col-xs-12 font-primary primary-color zf-name-proddet" id="nameProductGrid">
+        <NomeProd>
+      </h1>
+      <span class="col-xs-12 zf-cod-proddet" id="idCodProdGrid">Ref: <CodProd></span>
+
+      <!-- Price -->
+      <div class="col-xs-12">
+        <p class="prod-price" id="idPriceGridFC" data-prod-price="pn:<PrecoNum>; po:<PrecoOri>; cp: <CodProd>; mp:<MaxParcelasProdNum>">
+          <!-- <PrecoSimples> -->
+        </p>
+      </div>
+      <!-- grid -->
+      <div class="col-xs-12 FCGrid" id="idMainGridFC_<IDProduto>">
+        <!-- content grid -->
+      </div>
+      <div class="col-xs-12">
+        <div id="ShowCEP<IDProduto>" class="fc-showcep-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- details -->
+  <div class="row">
+    <h4 class="col-xs-12 col-sm-12 font-primary primary-color zf-discription-tit-proddet">
+      Detalhes do Produto
+      <hr>
+    </h4>
+    <div class="col-xs-12 col-sm-12 zf-discription-proddet">
+      <Descricao><br>
+      <DescrHTM>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- suggest -->
+  <div class="row">
+    <h4 class="col-xs-12 col-sm-12 font-primary primary-color zf-discription-tit-proddet">
+      Sugerimos Também
+      <hr>
+    </h4>
+    <div class="col-xs-12 col-sm-12">
+      <CrossSelling>
+    </div>
+  </div>
+  <!-- suggest -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <Comments>
+    </div>
+  </div>
+
+
+<!-- includes -->
+<link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1" />
+
+<script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
+<script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>
+
+<script>fnShowCEPGrid(<IDProduto>); /*FC simulação de frete */</script>
+<script>FCGrid$.fnMultipleZoom("<ImagemProdDet>","<ImagemProdAmp>", false);</script>
+
+  <script>
+  var aProductOnlyOneGrid=[], aProductListGrid=[];
+
+  /* personalização */
+  var prds_price = [];
+  prds_price.push(["<PrecoNum>","<PrecoOri>"]); /* personaliza preco de - ate */
+
+  /* Begin: produto principal */
+  var sCor= ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+  aProductOnlyOneGrid.push(JSON.stringify({IDProduto: <IDProduto>,codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>", imgPri: "<ImagemProdPri>"}));
+  /* End: produto principal */
+
+  /* Begin: lista subprodutos */
+  <sub>
+  
+  prds_price.push(["<PrecoNum>","<PrecoOri>"]); /* personaliza preco de - ate */
+
+
+  var sCor= ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+  aProductListGrid.push(JSON.stringify({IDProduto: <IDProduto>, codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>", imgPri: "<ImagemProdPri>"}));
+  var productOnlyOneGrid = [];
+  </sub>
+  /* Begin: lista subprodutos */
+
+  /* personaliza preco de - ate */
+  if(typeof firstPriceList === "function"){
+    function sortfunction(a, b){
+      return (a[0] - b[0]) //faz com que o array seja ordenado numericamente e de ordem crescente.
+    }
+    var prodprice = prds_price.sort(sortfunction);
+    var priceMin =  "0", priceMax = "0";
+    if(parseFloat(prodprice[0][0]) !== parseFloat(prodprice[prodprice.length-1][0])){
+      priceMin = prodprice[0][0];
+      priceMax = prodprice[prodprice.length-1][0]
+    }
+    firstPriceList(prodprice, [["<PrecoNum>","<PrecoOri>"]], "codProd", "<MaxParcelasProdNum>", "idPriceGridFC", priceMin, priceMax);
+  }
+  /* personaliza preco de - ate */
+
+
+  /* código opcional para alterar as configurações da grade:begin */
+  FCGrid$.myOptions = {
+    autoSelect : false,
+    shippingUpdate : true,
+    incMultGrid : true,
+    separadorRGBCor : '|',
+    qtyDescriptors : 2,
+    htmlFlagChecked : '<i class="FCCheckedGrid"></i>',
+    imageProduct : 'cor',
+    colorName : false,
+    colorImg : false,
+    colorImgFormat : '.gif',
+    stock: false,
+    btnSelectImg : 'botcarrinho.svg?cccfc=1', /*'botselecionegrid.svg?cccfc=1'*/
+    btnBuyImg : 'botcarrinho.svg?cccfc=1',
+    btnContactUSImg : 'botconsultegrid.svg?cccfc=1',
+    btnSoldOut : 'botcarrinhoesgotado.svg?cccfc=1',
+    textGrid : '',
+    order : ['adicional1', 'cor', 'adicional2', 'adicional3', 'adicionalD1', 'adicionalD2', 'adicionalD3'],
+    nameDescriptor : {
+      cor : 'Cor',
+      adicional1 : 'Tamanho',
+      adicional2 : 'Atributo',
+      adicional3 : 'Marca',
+      adicionalD1 : 'Coleção',
+      adicionalD2 : 'Local',
+      adicionalD3 : 'Obs'
+    },
+    textDescriptor : {
+      cor : 'Escolha a <b>Cor</b>',
+      adicional1 : 'Escolha o <b>Tamanho</b>',
+      adicional2 : 'Selecione',
+      adicional3 : 'Selecione',
+      adicionalD1 : 'Selecione',
+      adicionalD2 : 'Selecione',
+      adicionalD3 : 'Selecione'
+    }
+  };
+  /* código opcional para alterar as configurações da grade:end */
+
+  FCGrid$.init("idMainGridFC_<IDProduto>", aProductListGrid, aProductOnlyOneGrid); /* Inicia a grade */
+
+  </script>
+
+</ProdDet>
+
+<!-- zoom -->
+<ProdAmp>
+</ProdAmp>
+
+<!-- footer -->
+<ProdBottom>
+  <script>
+    /* Autopaginacao - exec func of products */
+    function FuncAutoPagEnd(){
+      zF$.fnExecAllFuncProducts(); /* exec all function products */
+    }
+  </script>
+</ProdBottom>
