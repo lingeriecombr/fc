@@ -1,0 +1,68 @@
+<script src='<PathTo file="htm/js/modernizr.js">'></script>
+<!-- 1° linha/título : inicio -->
+<a href="/c/pijama-feminino-longo-inverno-calca-comprida" style="text-decoration:none;">
+<h2 class="zf-section-titles primary-color font-primary">Sutiãs Duloren - Mais Vendidos</h2>
+</a>
+<!-- 1° linha/título : fim -->
+<!-- 1° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" id="1909452">
+  <prod out="p255" id="1909419">
+  <prod out="p255" id="5158222">
+  <prod out="p255" id="3975270">
+  <prod out="p255" id="2363911">
+</div>
+<!-- 1° linha de produtos : fim -->
+<!-- 2° linha/título : inicio -->
+<a href="/c/pijama-feminino-longo-inverno-calca-comprida" style="text-decoration:none;">
+<h2 class="zf-section-titles primary-color font-primary">Calcinhas Duloren - Mais Vendidas</h2>
+</a>
+<!-- 2° linha/título : fim -->
+<!-- 2° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" id="1929828">
+  <prod out="p255" id="2368248">
+  <prod out="p255" id="5058694">
+  <prod out="p255" id="1909982">
+  <prod out="p255" id="2369990">
+</div>
+<!-- 2° linha de produtos : fim -->
+
+<script>
+$('.owl-prods-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            center: true,
+            nav:true,
+            loop: true
+        },
+        768:{
+            items:4,
+            nav:false,
+            stagePadding: 25
+        },
+        1024:{
+            items:4,
+            nav:true,
+            loop:false
+        },
+        1200:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+function fnLazyLoadIMG(){
+  var allElemImg = document.querySelectorAll(".owl-carousel .zf-prodout-img img");
+  for(var i=0; i< allElemImg.length; i++){
+    var oImg = allElemImg[i].getAttribute("data-src");
+    if(oImg != null){ allElemImg[i].src= oImg; }
+  }
+}fnLazyLoadIMG();
+</script>
