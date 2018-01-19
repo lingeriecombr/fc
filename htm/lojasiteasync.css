@@ -1,0 +1,117 @@
+/* Fastcommerce - Xtreme Responsive Store Async - Abril/2016 (v5) */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+
+/* Footer - Rodape.htm */
+.FootterMainBarFC .row{padding:20px 0 20px 0;clear:both;}
+.FootterMainBarFC .row .title-footer{display:block;margin:0 auto;text-align:left;margin-bottom:8px;font-family:'Open Sans',verdana,arial;font-weight:700;color:<tag-FCCSSSecondMainColor>}
+.FootterMainBarFC .row ul{/*margin: 0 auto;*/font-family:'Open Sans',verdana,arial;font-weight:400;}
+.FootterMainBarFC .row ul li{list-style:none;text-align:left;padding:8px 0 8px 0;}
+.FootterMainBarFC .row .FooterAddressFC li{list-style:none;text-align:left;padding:3px 0 3px 0;float:left;clear:both;}
+.FootterMainBarFC .row .FooterAddressFC .FooterCompanyPhoneFC{list-style:none;text-align:left;padding:12px 0 0 0;}
+.FooterNewsletterBoxFC{margin-top:20px;}
+.FooterNewsletterBox{width:100%;}
+.FooterNewsletterForm{padding:10px 15px 10px 15px;}
+span .FooterNewsletterInput{height:38px;font-size:14px;border:1px solid <tag-FCCSSColor10> !important;padding:0 0 0 10px;width:170px;}
+.FooterInputPosition{float:left;margin:0 0 0 0}
+.FooterInputBtnPosition{margin:0 0 0 0;}
+.FooterSpaceContainerFC{margin:10px 0 10px 0 !important;}
+.FooterTecFastCommerce{font-size:12px;}
+.FooterInfosContainer{margin:5px 0 !important;}
+.FooterInfosContainer text{font-family:'Open Sans',verdana,arial;font-weight:400;}
+.FooterInfosContainer text + text{font-family:'Open Sans',verdana,arial !important;font-weight:700;}
+.FooterInfosContainer a:hover path, .FooterInfosContainer a:hover rect, .FooterInfosContainer a:hover circle{transition:fill 0.2s ease;}
+.FooterSepFC img{max-width:100%;}
+.FooterSepFC{padding:0 0 30px 0}
+.FooterAddressFC li{font-size:12px;}
+.FooterAddressIconFC{position:relative;top:-4px;margin:0 0 0 0;float:left;}
+.FooterCompanyTxtFC{margin:0 0 0 3px}
+.FooterTecBoxFC{width:100%;line-height: 35px;vertical-align:middle;background-color:<tag-FCCSSColor11>;}
+.FooterTecHeightFC{padding:10px 0 3px 0;}
+.CompanyAddressLine1{margin:0 0 0 3px}
+.CompanyAddressLine2{clear:both;float:left;margin:2px 0 0 26px}
+.FooterTitleTxt{display:block;font-family:'Open Sans',verdana,arial !important;font-weight:700;margin:0 auto 8px;text-align:left;color:<tag-FCCSSSecondMainColor>}
+.FooterULPaymentFC li{display:inline;}
+.FooterULSecurityFC li{display:inline;}
+
+/* History */
+#idPageHistory{width:100%;margin-top:30px;color:<tag-FCCSSMainColor>;}
+#idDivPageHistory{max-width:1200px;margin:0 auto;}
+#idTitPageHistory{font-size:1.2em;font-weight:bold;margin:0 0 15px 10px;}
+#idPageHistoryFC li{list-style-type:none;margin:0;padding:0;vertical-align:top}
+#idPageHistoryFC ul li{display:inline-block;}
+#idListPageHistoryFC li{margin:0 5px 30px 5px;width:18%;min-width:170px;}
+.EstImagePageHistory{background-color:white;text-align:center;margin:5px;min-height:100px;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;}
+.EstImagePageHistory .EstFotoPageHistory{max-width:100px;max-height:100px;margin:2px 0 0 2px;}
+.EstNamePageHistory {text-align:center;margin:0 0 10px 0;font-family:'Open Sans',verdana,arial;font-weight:400;}
+.EstNamePageHistory a{height:40px;font-size:14px;text-decoration:none;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;color:<tag-FCCSSColor22>;}
+.EstNamePageHistory a:hover{height:40px;font-size:14px;text-decoration:underline;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;color:<tag-FCCSSColor22>;}
+.EstPricePageHistory{text-align:center;margin:0;font-size:14px;font-family:'Open Sans',verdana,arial !important;font-weight:700;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;color:<tag-FCCSSColor6>;}
+
+/*CrossSelling*/
+.DivCrossSelling{width:100%;float:left;margin-top:30px;border-top-style:solid;border-top-width:1px;border-top-color:<tag-FCCSSColor21>;}
+#idTitProdCrossFC{color:<tag-FCCSSMainColor>;font-size:1.2em;font-weight:bold;margin:10px 0 10px 10px;text-align:left;color:<tag-FCCSSMainColor>;}
+#idProdCrossFC {margin:0;width:100%;background-color:<tag-FCCSSColor8>;}
+#idProdCrossFC ul li {display:inline-block;float:left;padding:12px;}
+#idListProdCrossFC{overflow:hidden;height:248px;position:relative;}
+#idListProdCrossFC li {margin:0 5px 0 5px;width:20%;min-width:170px;height:248px;}
+#idProdCrossFC li {list-style-type:none;margin:0;padding:0 0 0 0;}
+.EstImageProdCross{text-align:center;margin:5px;height:59%;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;}
+.EstImageProdCross img{height:100%}
+.EstCatProdCross{text-align:center;margin:0 0 5px 0;font-size:12px;font-family:'Open Sans',verdana,arial;font-weight:400;line-height:17px;color:<tag-FCCSSColor7>;}
+.EstRefProdCross{display:block;font-family:'Open Sans',verdana,arial;font-weight:400;color:<tag-FCCSSColor7>;}
+.EstNameProdCross{font-size:12px;line-height:17px;margin-bottom:5px;display:block;height:54px;font-family:'Open Sans',verdana,arial;font-weight:400;}
+.EstNameProdCross a{display:block;height:36px;overflow:hidden;}
+.EstPriceProdCross{text-align:center;margin:0 0 8px 0;font-size:14px;font-family:'Open Sans',verdana,arial !important;font-weight:700;background-color:<tag-FCCSSColor8>;border:0 solid <tag-FCCSSColor2>;color:<tag-FCCSSColor6>;}
+.EstDescrProdCross{font-size:10px;text-align:center;margin:100px 0 0 0;display:block;cursor:pointer !important;border:0 solid <tag-FCCSSColor2>;color:<tag-FCCSSColor12>;}
+#idListProdCrossFC li:hover .EstDescrProdCross{background:<tag-FCCSSColor8>;border:1px solid <tag-FCCSSColor10>;transition:margin 0.5s ease;margin:-105px 0 0 0;width:100%;height:100px;padding:20px;font-size:13px;line-height:16px;box-sizing:border-box;opacity:0.9;position:relative;font-family:'Open Sans',verdana,arial;font-weight:400;overflow:hidden;}
+.EstDescrProdCross span{overflow:hidden;height:33px;display:block;}
+#EstCommentsTxt{font-size:18px;padding:9px 0;text-align:left;height:30px;display:block;margin:0 0 5px 0;background:<tag-FCCSSColor8>;color:<tag-FCCSSMainColor>;}
+#idListProdCrossFC li .EstCatProdCross .EstCatNameProdCross{color:<tag-FCCSSSecondMainColor>}
+
+/* Footer - Rodape.htm */
+.FootterMainBarFC .row{background:<tag-FCCSSColor3>}
+.FootterMainBarFC .row ul li a{color:<tag-FCCSSColor18>}
+.FootterMainBarFC .row ul li a:hover{color:<tag-FCCSSColor22>}
+.FooterNewsletterBox{background-color:<tag-FCCSSColor8>}
+span .FooterNewsletterInput{border:1px solid <tag-FCCSSColor10> !important;color:<tag-FCCSSColor12>;}
+.FooterTecFastCommerce{color:<tag-FCCSSColor18>}
+.FooterTecFastCommerce a{color:<tag-FCCSSColor18>}
+.FooterInfosContainer svg{box-shadow:0 0 5px 0 <tag-FCCSSColor10>;border:1px solid <tag-FCCSSColor21>;}
+.FooterInfosContainer a:hover svg{box-shadow:0 0 3px <tag-FCCSSColor18>;background-color:<tag-FCCSSColor11>;}
+.FooterInfosContainer path, .FooterInfosContainer rect, .FooterInfosContainer circle{fill:<tag-FCCSSInfosContainer>;}
+.FooterInfosContainer a:hover path, .FooterInfosContainer a:hover rect, .FooterInfosContainer a:hover circle{fill:<tag-FCCSSInfosContainerHover>;}
+.FooterInfosContainer a:hover text + text{fill:<tag-FCCSSColor7>;}
+
+/* My Account */
+.FCMyCheckout .FooterInfoBannersBG, .FCMyCheckout #idPageHistoryFC{display:none;}
+#FCMenuCli .FCMenuCliImgName .FCMenuCliName .FCMenuCliNameLabel{font-weight:bold;}
+.FCDivLastOrder1NumMyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5;padding:10px 10px 10px 5px;}
+.FCDivLastOrder1DateValMyAcc{font-weight:bold;}
+.FCDivOrdersList1NumMyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5;padding:10px 10px 10px 5px;}
+.FCDivOrdersList1DateValMyAcc{font-weight:bold;}
+.FCDivLastOrder2PaymentValMyAcc{font-weight:bold;}
+.FCDivLastOrder2ValMyAcc{color:#558b2f;font-size:1.5em;}
+.FCMyCheckout .FCCurrencyLabel{color:#558b2f;}
+#idTxtSit1MyAccOrderFC{font-size:0.9em;font-weight:bold;}
+.FCDivOrdersList2PaymentValMyAcc{font-weight:bold;}
+.FCDivOrdersList2ValMyAcc{color:#558b2f;font-size:1.5em;}
+.FCDivRating2EmailValMyAcc{font-size:0.9em;}
+.FCDivRating2DateValMyAcc{font-size:0.9em;font-weight:bold;}
+.FCMyAccount .buttonForm{text-transform:uppercase;font-weight:bold;font-size:2em;}
+.FCDivAddress1MyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5 !important;}
+.FCDivCards2DateValMyAcc{font-size:0.9em;font-weight:bold;}
+.FCDivProdAv2DateUntilValMyAcc{font-weight:bold;}
+.FCDivRegister1NomeMyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5;padding:10px 10px 10px 5px;}
+.FCDivCards1MyAcc{background-color:#f6f5f5 !important;}
+.FCDivCards1ImgMyAcc img{border:1px solid #eaeaea}
+.FCDivProdAv1ProdNameMyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5;padding:10px;}
+.FCDivRating1ProdNameMyAcc{font-family:'Open Sans',verdana,arial;font-weight:700;background-color:#f6f5f5;padding:10px;}
+#FCMyAccContentCards .FCMyAccContent .FCDivExtCardsMyAcc .buttonMyAcc{background:#e53935;}
+#FCMyAccContentAddress .FCMyAccContent .FCDivExtAddressMyAcc .buttonsMyAcc #idAddressDelete{background:#e53935;}
+#FCMyAccContentRating .FCMyAccContent .FCDivExtRatingMyAcc .buttonsMyAcc #idRatingDelete{background:#e53935;}
+#FCMyAccContentProdAv .FCMyAccContent .FCDivExtProdAvMyAcc .buttonsMyAcc #idProdAvDelete{background:#e53935;}
+.FCAddressMyAcc #idAccountMyAddressFC #FCMyAccContentAddress .buttonsAddAddressMyAcc #idRegisterAddress{background:#1e88e5;font-weight:bold;}
+.FCMyAccContent .FCDivExtLastOrderMyAcc .buttonsMyAcc #idSeeAllOrders{background:#1e88e5;}
+.FCMyAccContent .FCDivExtAccessMyAcc .buttonsMyAcc #idAccessPswEdit{background:#1e88e5;}
+.FCMyAccContent .FCDivExtOrdersListMyAcc .buttonsMyAcc #idSeeDetailTracking{background:#1e88e5;}
+#FCMyAccContentMyAddress, .FCDivAddress2MyAcc{font-size:0.9em;}
