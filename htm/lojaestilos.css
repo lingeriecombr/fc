@@ -1,0 +1,39 @@
+/* Global */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+
+/* Estilos personalizados */
+.EstPassoCompraDiv {display:none}
+.EstContinuarComprando {display:none;}
+#TabBancos {display:none;}
+.PedLinkRodape{color:004a8a;text-decoration:underline}
+.SecurityLogos img{margin:10px 5px;float:left;}
+.SecurityLogos svg{margin:15px 5px;float:left;}
+.SecurityLogos{margin:0px auto;display:table;}
+
+/* Menu */
+.SpecialPedMenuULFC{list-style-type:none;font-family:'Open Sans',verdana,arial;font-weight:400;}
+.SpecialPedMenuULFC li{display:inline;margin:0px 0px 0px 0px;font-size:12px;}
+.SpecialPedMenuULFC li a{text-decoration:none;padding:13px 10px 13px 10px;}
+.SpecialPedMenuULFC li a:hover {background:#ededed;color:#2d2d2d;}
+
+/* Header */
+.HeaderLogo{max-width:100%;max-height:100%;}
+.HeaderPedBTCompanyTxtFC{font-family:'Open Sans',verdana,arial;font-weight:400;font-size:20px;}
+.HeaderPedSepLineFC{background-color:<tag-FCCSSMainColor>;width:100%;margin:10px 0px 50px 0px;height:20px;}
+.SpecialPedMenuPositionULFC{position:relative;top:15px;}
+.HeaderLinkPositionMenuFC{position:relative;top:45px;}
+.HeaderPhonePositionMenuFC{position:relative;top:35px;color:#727272;}
+.HeaderHomePositionMenuFC a{position:relative;top:39px;color:#727272;}
+.HeaderPedHomeIconFC{position:relative;}
+.HeaderPedHomeIconFC svg {fill:#727272;}
+.HeaderPedPhoneIconFC {position:relative;top:2px;}
+.HeaderPedPhoneIconFC svg path{fill:#727272;}
+
+/* Footer */
+.FooterPedPositionFC{bottom:0px;width:100%;}
+.FooterPedAddFastCommerce{font-family:'Open Sans',verdana,arial;font-weight:400;font-size:12px;}
+
+/*Media Queries*/
+@media only screen and (max-width:640px) { 
+  .HeaderPhonePositionMenuFC{position:relative;top:0px;}
+}
