@@ -1,0 +1,95 @@
+<div class="col-sm-4 col-md-3 col-lg-3 zf-leftbar">
+  <div class="hidden-sm hidden-md hidden-lg zf-filter-mobile" id="buttonFilterMobile">
+    Exibir os filtros
+  </div>
+
+  <div class="zf-filter-leftbar hidden-xs">
+    <style>#ContentFil .DivFiltrarPor, .EstExibeFiltrosFC{display:none}</style>
+    <div id="ProductsFilterFC" data-include-css="false"></div>
+    <script>FCLib$.loadAsyncCSS('<PathTo file="htm/css/productsfilter.css">', true);</script>
+
+    <div class="row-leftbar hidden-xs">
+    	<div class="zf-list-Leftbar">
+        <h3>TODOS OS DEPARTAMENTOS</h3>
+    		<ListPathCat out="13" id="-1">
+    	</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+(function(){
+
+  /* function global */
+  var addClass = function(object, nameClass){
+    return object.className += " " + nameClass.replace(/^\s+|\s+$/g,"");
+  }
+
+  var removeClass = function(object, nameClass){
+    var rxp = new RegExp( "\\s?\\b"+ nameClass +"\\b", "g" );
+    object.className = object.className.replace( rxp, '' );
+  }
+
+  var hasClass = function(elementDOM, classNameHas){
+    var has = true, names = String(classNameHas).replace(/^\s+|\s+$/g, '').split(/\s+/);
+    for(var i = 0, len = names.length; i < len; i++){
+      if(!(elementDOM.className.search(new RegExp('(?:\\s+|^)' + names[i] + '(?:\\s+|$)', 'i')) > -1)) {
+        has = false;
+        break;
+      }
+    }
+    return has;
+  };
+
+  var hiddenNode = function(args){
+    var hideFilters = document.querySelectorAll(args);
+    for(var i=0; i < hideFilters.length; i++){
+      hideFilters[i].style.display = 'none';
+    }
+  }
+
+  var viewFilter = function(){
+    var objectDOM = this;
+    var filters = document.querySelector('.zf-filter-leftbar');
+
+    if(hasClass(filters, 'hidden-xs')){
+      removeClass(filters, 'hidden-xs');
+      addClass(objectDOM, 'is-mobile');
+      objectDOM.textContent = "Esconder os filtros";
+    }else{
+      addClass(filters, 'hidden-xs');
+      removeClass(objectDOM, 'is-mobile');
+      objectDOM.textContent = "Exibir os filtros";
+    }
+
+    hiddenNode('.FilItems');
+    hiddenNode('.FilInputSearch');
+  }
+
+  var button = document.querySelector('#buttonFilterMobile');
+  if(button){
+    button.addEventListener('click', viewFilter, false);
+  }
+
+  //idcategoria=46225&fil=327&avancada=true&tfil=Lilas&adicional1=125
+  var sPag=document.location.href.toUpperCase();
+  var w=0, ua=navigator.userAgent || navigator.vendor || window.opera;
+  if(ua.match(/iPad/i) || ua.match(/iPhone/i) || ua.match(/iPod/i)){
+    if(window.orientation!==0){  w=screen.height; }else{ w=screen.width; }
+  }else{ w=screen.width || document.documentElement.clientWidth;}
+
+  if(w<768 && sPag.indexOf("IDCATEGORIA")>0 || w<768 && sPag.indexOf("FIL")>=0 || w<768 && sPag.indexOf("TFIL")>=0 || w<768 && sPag.indexOf("ADICIONAL1")>=0
+      || w<768 && sPag.indexOf("ADICIONAL2")>=0 || w<768 && sPag.indexOf("ADICIONAL3")>=0 )
+  {
+    var filters = document.querySelector('.zf-filter-leftbar');
+    removeClass(filters, 'hidden-xs');
+    addClass(button, 'is-mobile');
+
+    setTimeout(function(){ hiddenNode('.FilItems'); hiddenNode('.FilInputSearch');}, 1000);
+    button.textContent = "Esconder os filtros";
+  }
+
+})();
+</script>
