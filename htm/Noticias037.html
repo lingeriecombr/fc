@@ -1,0 +1,68 @@
+<script src='<PathTo file="htm/js/modernizr.js">'></script>
+<!-- 1° linha/título : inicio -->
+<a href="/listaProdutos.asp?IDLoja=159&Digitada=True&Texto=Lupo+Urban" style="text-decoration:none;">
+<h2 class="zf-section-titles primary-color font-primary"></h2>
+</a>
+<!-- 1° linha/título : fim -->
+<!-- 1° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" id="5821304">
+  <prod out="p255" id="5859620">
+  <prod out="p255" id="5821300">
+  <prod out="p255" id="5859608">
+  <prod out="p255" id="5821094">
+</div>
+<!-- 1° linha de produtos : fim -->
+
+<script>
+$('.owl-prods-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            center: true,
+            nav:true,
+            loop: true
+        },
+        768:{
+            items:4,
+            nav:false,
+            stagePadding: 25
+        },
+        1024:{
+            items:4,
+            nav:true,
+            loop:false
+        },
+        1200:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+function fnLazyLoadIMG(){
+  var allElemImg = document.querySelectorAll(".owl-carousel .zf-prodout-img img");
+  for(var i=0; i< allElemImg.length; i++){
+    var oImg = allElemImg[i].getAttribute("data-src");
+    if(oImg != null){ allElemImg[i].src= oImg; }
+  }
+}fnLazyLoadIMG();
+</script>
+<h4 class="col-xs-12 col-sm-12 font-primary primary-color zf-discription-tit-proddet">Links Relacionados<hr></h4>
+<ul>
+<a href="/listaProdutos.asp?IDLoja=159&Digitada=True&Texto=Lupo+Urban"><img src='https://www.rumo.com.br/lojas/00000159/images/lupourban.png' alt="Marca Lupo"></a>
+<a href="/listaProdutos.asp?IDLoja=159&Digitada=True&Texto=Lupo+Urban" itemprop="url"><span class="style5"><font color="#6a6a6a" face="Arial, Helvetica, sans-serif">Clique para ver todos os produtos da linha</font></span></span></a></span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">&gt; 
+<a href="/listaProdutos.asp?IDLoja=159&Digitada=True&Texto=Lupo+Urban" itemprop="url"><span class="style3" itemprop="title"><font face="Arial, Helvetica, sans-serif">Lupo Urban</font></span></a></span></font></li>
+</ul>
+
+
+<style type="text/css"> 
+a:link { text-decoration: none;}
+a:hover {
+ text-decoration: underline;
+}
+  </style>
