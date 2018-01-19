@@ -1,0 +1,176 @@
+<!-- banner : início -->
+<div class="zf-custom-banner-content">
+
+  <img src='<PathTo file="images/hotsite/banner.png">'>
+
+</div>
+<!-- banner : fim -->
+
+<!-- cabeçalho -->
+</header>
+
+
+<br>
+
+<!-- conteúdo : Início -->
+<section class="zf-section-custom">
+<article class="container">
+
+
+<!-- 1° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+  <prod out="p255" em="capa">
+</div>
+<!-- 1° linha de produtos : fim -->
+
+<br>
+
+<!-- banner do produto : inicio -->
+<div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="col-md-12 zf-custom-banner">
+      
+      <img src='<PathTo file="images/hotsite/bannerproduto.png">'>
+
+    </div>
+  </div>
+</div>
+<!-- banner do produto : fim -->
+
+<br>
+
+<!-- 2° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+</div>
+<!-- 2° linha de produtos : fim -->
+
+<br>
+
+<!-- 3° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+</div>
+<!-- 3° linha de produtos : fim -->
+
+<br>
+
+<!-- 4° linha de produtos : inicio -->
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+  <prod out="p255" cat="Body inteiro" em="rand">
+</div>
+<!-- 4° linha de produtos : fim -->
+
+<div class="row">
+  <div class="col-xs-12 col-md-6 zf-custom-banner">
+    
+    <img src='<PathTo file="images/hotsite/bannerproduto.png">'>
+
+  </div>
+  <div class="col-xs-12 col-md-6 zf-custom-banner">
+    
+    <img src='<PathTo file="images/hotsite/bannerproduto.png">'>
+    
+  </div>
+</div>
+
+
+<h2 class="zf-section-titles primary-color font-primary">Título</h2>
+
+<div class="owl-carousel owl-prods-carousel">
+  <prod out="p255" cat="Biquini Fashion" em="rand">
+  <prod out="p255" cat="Biquini Fashion" em="rand">
+  <prod out="p255" cat="Biquini Fashion" em="rand">
+  <prod out="p255" cat="Biquini Fashion" em="rand">
+  <prod out="p255" cat="Biquini Fashion" em="rand">
+</div>
+
+
+</article>
+</section>
+<!-- conteúdo : Fim -->
+
+
+
+<style>
+/* define imagem de fundo para a página */
+.zf-section-custom {
+  background-image: url(<PathTo file="images/hotsite/background.png">);
+}
+</style>
+
+
+<style>
+  h3.zf-section-titles, .owl-brands-carousel {display: none !important;}
+</style>
+
+<script>
+  (function(){
+    var $color_custom = "";
+    if (typeof $color_custom !== "undefined" && $color_custom != ""){
+      var s = document.createElement('style');
+          s.innerHTML = ".price, .zf-prodout-spy:hover, .zf-section-titles {color: "+ $color_custom +" !important; }";
+      document.body.appendChild (s);
+    }
+  })();
+</script>
+
+<script>
+$('.owl-prods-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            center: true,
+            nav:false,
+            loop: true
+        },
+        768:{
+            items:4,
+            nav:false,
+            stagePadding: 25
+        },
+        1024:{
+            items:4,
+            nav:true,
+            loop:false
+        },
+        1366:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+(function(){
+  var allElemImg = document.querySelectorAll(".owl-carousel .zf-prodout-img img");
+  for(var i=0; i< allElemImg.length; i++){
+    var oImg = allElemImg[i].getAttribute("data-src");
+    if(oImg != null){ allElemImg[i].src= oImg; }
+  }
+})();
+</script>
+
+<!-- css in /lojasite.css, js in lojalibasync.js -->
