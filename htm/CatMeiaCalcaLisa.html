@@ -1,0 +1,92 @@
+<!-- banner : início -->
+<div class="zf-header-banner">
+  <div align="center"><a href=""><img src='https://www.rumo.com.br/lojas/00000159/images/BanCatMeiaCalca.jpg' width="98%" /></a></div>
+</div>
+<!-- banner : fim -->
+<!-- conteúdo : tabela-->
+<table width="100%" border="11" cellpadding="5" cellspacing="5" bordercolor="#FFFFFF" bgcolor= "#FFFFFF" margintop= "1%">
+<tr align="center" width="100%" height="30">
+    <td width="19%" bgcolor="#999999"><a href="/c/meia-calca-lisa-opaca?idloja=159&fil=8123&avancada=true&tfil=Ate+30"><font color="#FFFFFF" size="2" face="Arial Narrow">ATÉ FIO 30</font></a></td>
+    <td width="1" bgcolor= "#FFFFFF">&nbsp;</td>
+    <td width="19%" bgcolor= "#999999"><div align="center"><a href="/c/meia-calca-lisa-opaca?idloja=159&fil=8124&avancada=true&tfil=De+40+a+50"><font color="#FFFFFF" size="2" face="Arial Narrow">DE FIO 40 Á 50</font></a></div></td>
+   <td width="1" bgcolor= "#FFFFFF">&nbsp;</td>
+    <td width="19%" bgcolor= "#999999"><div align="center"><a href="/c/meia-calca-lisa-opaca?idloja=159&fil=8125&avancada=true&tfil=De+60+a+70"><font color="#FFFFFF" size="2" face="Arial Narrow">DE FIO 60 Á 70</font></a></div></td>
+    <td width="1" bgcolor= "#FFFFFF">&nbsp;</td>
+    <td width="19%" bgcolor= "#999999"><div align="center"><a href="/c/meia-calca-lisa-opaca?idloja=159&fil=8126&avancada=true&tfil=Maior+que+80"><font color="#FFFFFF" size="2" face="Arial Narrow">MAIOR QUE FIO 80</font></a></div></td>
+    <td width="1" bgcolor= "#FFFFFF">&nbsp;</td>
+    <td width="19%" bgcolor= "#999999"><div align="center"><a href="/c/meia-calca-lisa-opaca?idloja=159&avancada=true&adicional2=33091"><font color="#FFFFFF" size="2" face="Arial Narrow">PLUS SIZE</font></a></div></td>
+</tr>
+<tr align="center" width="100%" height="5" ></tr>
+</table>
+<!--Fim conteúdo : Tabela -->
+<p>
+</p>
+<style type="text/css"> 
+a:link { text-decoration: none;}
+a:hover {
+ text-decoration: underline;
+}
+</style>
+<style>
+  h3.zf-section-titles, .owl-brands-carousel {display: none !important;}
+</style>
+<style>
+/* define imagem de fundo para a página */
+.zf-section-custom {
+  background-image: url(<PathTo file="">);
+}
+</style>
+
+
+
+<script>
+  (function(){
+    var $color_custom = "#05906d";
+    if (typeof $color_custom !== "undefined" && $color_custom != ""){
+      var s = document.createElement('style');
+          s.innerHTML = ".price, .zf-prodout-spy:hover, .zf-section-titles {color: "+ $color_custom +" !important; }";
+      document.body.appendChild (s);
+    }
+  })();
+</script>
+
+<script>
+$('.owl-prods-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            center: true,
+            nav:true,
+            loop: true
+        },
+        768:{
+            items:4,
+            nav:false,
+            stagePadding: 25
+        },
+        1024:{
+            items:4,
+            nav:true,
+            loop:false
+        },
+        1366:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+(function(){
+  var allElemImg = document.querySelectorAll(".owl-carousel .zf-prodout-img img");
+  for(var i=0; i< allElemImg.length; i++){
+    var oImg = allElemImg[i].getAttribute("data-src");
+    if(oImg != null){ allElemImg[i].src= oImg; }
+  }
+})();
+</script>
+
+<!-- css in /lojasite.css, js in lojalibasync.js -->
